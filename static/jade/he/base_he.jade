@@ -1,0 +1,65 @@
+include ../components/vars
+block vars
+
+doctype html
+html(lang='he-il' dir='rtl')
+  head
+    block title
+      title= "PyCon ישראל " + year
+
+    //- base(href='/'+year+'/he/')
+    base(href='/'+year+'/')
+
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='keywords', content='Python, PyCon, Django, conference, Israel, Tel Aviv')
+    meta(name='description', content='כנס PyCon הראשון בישראל!')
+    link(rel='shortcut icon', href='/'+year+'/static/images/pycon-il-logo-icon.svg', type='image/svg+xml')
+    link(rel='shortcut icon', href='/'+year+'/static/images/pycon-il-logo-icon.png', type='image/png')
+    //if lt IE 9
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', rel='stylesheet')
+    link(href='/'+year+'/static/css/pyconcz.css', rel='stylesheet')
+
+    script(src='https://js.tito.io/v1', async)
+    link(rel="stylesheet", type="text/css", href='https://css.tito.io/v1')
+
+    //- Facebook Meta
+    meta(property="og:title",       content="PyCon IL 2016" )
+    meta(property="og:site_name",   content="il.pycon.org" )
+    meta(property="og:description", content="The first PyCon in Israel!" )
+    meta(property="og:image",       content=urlBase + year + "/static/images/pycon-il-logo-fb.png" )
+    meta(property="og:url",         content=urlBase + year + "/")
+    meta(property="og:type",        content="website" )
+
+  body(class=pageClass, ontouchstart="")
+    //- include ../components/navbar
+    .canvas
+      .overlay
+      .viewport
+        block viewport
+
+      include components/footer
+    include ../components/js
+    
+    script(type="text/javascript").
+      function closeNavbar() {
+        $closer.unbind();
+        $body.toggleClass("open");
+      }
+      
+      var $body = $('body');
+      var $closer = $('.viewport, .canvas, .navbar a');
+      
+      $('.navbar-toggle').click(function(ev) {
+        ev.preventDefault();
+        
+        if ($body.hasClass('open')) {
+          closeNavbar();
+        } else {
+          $body.toggleClass("open");
+          $closer.click(function(ev) {
+            closeNavbar();
+          })
+        }
+      });

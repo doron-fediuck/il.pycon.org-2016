@@ -34,6 +34,13 @@ $divider-inverted: #527bac;
     line-height: 1.3;
   }
 
+  .nav-footer-rtl {
+    @include make-row();
+    float: right;
+    margin-bottom: 3em;
+    line-height: 1.3;
+  }
+
   .nav-title {
     display: block;
     margin-top: 10px;

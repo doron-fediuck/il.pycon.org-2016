@@ -49,6 +49,17 @@
     width: percentage(($columns / $grid-columns));
   }
 }
+@mixin make-sm-rtl-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-sm-min) {
+    float: right;
+    width: percentage(($columns / $grid-columns));
+  }
+}
 @mixin make-sm-column-offset($columns) {
   @media (min-width: $screen-sm-min) {
     margin-left: percentage(($columns / $grid-columns));

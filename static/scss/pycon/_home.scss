@@ -54,7 +54,8 @@
     display: inline-block;
     margin: 0;
     font-size: 96px;
-    text-align: left;
+    text-align: left; /* as backup */
+    text-align: start;
     vertical-align: middle;
   }
 
@@ -114,10 +115,31 @@
 .program-item:first-child {
   @include make-sm-column-offset(2);
 }
+.program-item-rtl:first-child {
+  @include make-sm-column-offset(2);
+}
 
 .program-item {
   @extend %centered-content;
   @include make-sm-column(4);
+
+  font-size: 18px;
+
+  .date {
+    color: $brand-primary;
+  }
+  .venue {
+    margin-top: 1em;
+    font-size: 16px;
+    i {
+      padding: 0 .25em;
+    }
+  }
+}
+
+.program-item-rtl {
+  @extend %centered-content;
+  @include make-sm-rtl-column(4);
 
   font-size: 18px;
 
@@ -143,4 +165,5 @@
 .tito {
   font-size: 20px;
   text-align: left;
+  text-align: start;
 }

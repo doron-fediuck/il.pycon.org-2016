@@ -28,9 +28,13 @@
 
 .djangogirls,
 .diamond,
+.diamond-rtl,
 .gold,
+.gold-rtl,
 .silver,
-.bronze {
+.silver-rtl,
+.bronze,
+.bronze-rtl {
   @include make-row();
 }
 
@@ -43,16 +47,28 @@
   .diamond & {
     @include make-sm-column(12);
   }
+  .diamond-rtl & {
+    @include make-sm-rtl-column(12);
+  }
 
   .gold & {
     @include make-sm-column(6);
+  }
+  .gold-rtl & {
+    @include make-sm-rtl-column(6);
   }
 
   .silver & {
     @include make-sm-column(4);
   }
+  .silver-rtl & {
+    @include make-sm-rtl-column(4);
+  }
   .bronze & {
     @include make-sm-column(2);
+  }
+  .bronze-rtl & {
+    @include make-sm-rtl-column(2);
   }
 
   img {

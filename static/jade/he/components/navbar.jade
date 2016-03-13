@@ -1,0 +1,34 @@
+header#top
+  .navbar
+    button.navbar-toggle(type="button", aria-expanded="false")
+      .fa.fa-bars
+
+    ul.nav.navbar-nav
+      li.about
+        a(href=pageUrl("he/#")) אודות
+      //- li.getting-here(class=activePage == "getting-here" ? "active" : "")
+        a(href=pageUrl("../getting-here/")) כיצד להגיע
+      //- li.tickets
+      //-   a(href=pageUrl("about/pycontest.html"))
+      //-     | #PyConTest
+      //- li.videos
+        a(href="http://www.superlectures.com/pycon2015/")
+          | וידאו
+      li.talks(class=activePage == "talks" ? "active" : "")
+        a(href=pageUrl("talks/"))
+          | הרצאות / לו&#34;ז
+      li.blog
+        a(href="https://medium.com/@pyconil/")
+          | בלוג
+          //- span.date Saturday 14th
+      //- li.sprints(class=activePage == "workshops" ? "active" : "")
+        a(href=pageUrl("workshops/"))
+          | ספרינטים וסדנאות
+          span.date Sunday 15th
+    
+    //- a(href="/2016/")
+      //- img.pycon-logo(
+        //- alt="PyCon IL",
+        //- src='/'+year+"/static/images/pycon-il-logo-icon.svg",
+        //- onerror="this.onerror = null; this.src = '/2016/static/images/pycon-il-logo.png'"
+      //- )

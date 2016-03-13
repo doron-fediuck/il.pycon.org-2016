@@ -46,7 +46,15 @@
   .djangogirls &,
   .diamond & {
     @include make-sm-column(12);
+
+    img {
+      width: auto;
+    }
   }
+  /* .diamond & { */
+    /* width: auto !important; */
+  /* } */
+
   .diamond-rtl & {
     @include make-sm-rtl-column(12);
   }

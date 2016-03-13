@@ -14,21 +14,21 @@ header#top
       //- li.videos
         a(href="http://www.superlectures.com/pycon2015/")
           | Videos
-      //- li.photos
-        a(href="https://goo.gl/photos/Sdpx5ZACzU9hsD9i8")
-          | Photos
-      //- li.talks(class=activePage == "talks" ? "active" : "")
+      li.talks(class=activePage == "talks" ? "active" : "")
         a(href=pageUrl("talks/"))
-          | Talks
-          span.date Saturday 14th
+          | Talks / Schedule
+      li.blog
+        a(href="https://medium.com/@pyconil/")
+          | Blog
+          //- span.date Saturday 14th
       //- li.sprints(class=activePage == "workshops" ? "active" : "")
         a(href=pageUrl("workshops/"))
           | Sprints &amp; workshops
           span.date Sunday 15th
     
-    a(href="/2016/")
-      img.pycon-logo(
-        alt="PyCon IL",
-        src='/'+year+"/static/images/pycon-il-logo-icon.svg",
-        onerror="this.onerror = null; this.src = '/2016/static/images/pycon-il-logo.png'"
-      )
+    //- a(href="/2016/")
+      //- img.pycon-logo(
+        //- alt="PyCon IL",
+        //- src='/'+year+"/static/images/pycon-il-logo-icon.svg",
+        //- onerror="this.onerror = null; this.src = '/2016/static/images/pycon-il-logo.png'"
+      //- )

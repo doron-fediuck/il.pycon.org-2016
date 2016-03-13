@@ -27,8 +27,8 @@ mixin talk(speaker)
 mixin branch-out()
   .branch.out
     img(
-      src="/2015/static/images/ui/branch-out.svg",
-      onerror="this.onerror = null; this.src = '/2015/static/images/ui/branch-out.png'"
+      src="/2016/static/images/ui/branch-out.svg",
+      onerror="this.onerror = null; this.src = '/2016/static/images/ui/branch-out.png'"
     )
 
 block vars
@@ -43,7 +43,7 @@ block viewport
       h2.title Registration #[small 8:00]
       .talk-description
         p.
-          Grab your lanyard, swag bag and coffee. #[br]
+          Grab your swag bag and coffee. #[br]
           Meet our sponsors and get ready for a day full of awesome talks!
       
       .commit.empty.first
@@ -53,113 +53,152 @@ block viewport
       h2.title The grand opening #[small 8:55]
       .talk-description
         p.
-          Welcome to the first #[strong PyCon CZ]. #[br]
-          Applause, introduction, jokes and meanwhile we lock the main door…
+          Welcome to the first #[strong PyCon IL]! #[br]
+          Proud to bring great talks and speakers, both from Israel and abroad.
       
       .commit.empty
         .dot
     
     .event-full
-      h2.title.amber Keynote #1 #[br] The future of Twisted #[small 9:00]
+      h2.title.travis Keynote #1 #[br] Topic TBD #[small 9:00]
       .talk-description
-        .speaker Amber Brown
+        .speaker Travis Oliphant
         p.
-          Amber, better known as HawkOwl, is a core developer and release
-          manager of the Twisted project.
-        a.social.github(href="https://github.com/hawkowl")
+            CEO of Continuum Analytics, NumFOCUS founder, NumPy, SciPy and 
+            Numba creator.
+        a.social.github(href="https://github.com/teoliphant")
           .fa.fa-github
-        a.social.twitter(href="https://twitter.com/hawkieowl")
+        a.social.twitter(href="https://twitter.com/teoliphant")
           .fa.fa-twitter
          
       .commit
         img.avatar(
-          src=avatar("amber_brown.jpg"),
-          alt='Photo of Amber Brown'
+          src=avatar("travis_cropped.jpg"),
+          alt='Photo of Travis Oliphant'
         )
 
     .event-full
-      h2.title.russell Keynote #2 #[br] The secret sauce behind #[br] Open Source #[small 10:00]
+      h2.title.olas Keynote #2 #[br] Topic TBD #[small 10:00]
       .talk-description
-        .speaker Russell-Keith Magee
+        .speaker Ola Sendecka and Ola Sitarska
+        //- p.
+
+        //- a.social.github(href="https://github.com/freakboy3742")
+          //- .fa.fa-github
+        //- a.social.twitter(href="https://twitter.com/freakboy3742")
+          //- .fa.fa-twitter
+         
+      .commit.empty
+        .dot
+
+    .event-full
+      h2.title.raymond Keynote #3 #[br] Topic TBD #[small 11:00]
+      .talk-description
+        .speaker Raymond Hettinger
         p.
-          Dr Russell Keith-Magee is a 9 year veteran of the Django core team,
-          and President of the DSF.
-        a.social.github(href="https://github.com/freakboy3742")
+            Python core developer for 14 years. Creator of the collections 
+            module and itertools module.
+        a.social.github(href="https://github.com/raymondh")
           .fa.fa-github
-        a.social.twitter(href="https://twitter.com/freakboy3742")
+        a.social.twitter(href="https://twitter.com/raymondh")
           .fa.fa-twitter
          
-      .commit
-        img.avatar(
-          src=avatar("russell_keith_magee.png"),
-          alt='Photo of Russell Keith-Magee'
-        )
-    
-    .branch-description
-      .branch-name
-        .master Master branch
-      .branch.in
-        img(
-          src="/2015/static/images/ui/branch-in.svg",
-          onerror="this.onerror = null; this.src = '/2015/static/images/ui/branch-in.png'"
-        )
-      .branch-name
-        .practical Practical branch
-    
-    h2.visible-xs-block Talks
-    p.visible-xs-block.
-      Two parallel branches of talks are going to be held in two rooms: D105 and
-      D0206. The #[strong Master branch] in D105 will be about general topics,
-      while the #[strong Practical branch] in D0206 will present more specific ones.
-    
-    //-  Iterate over speakers object (loaded in gulpfile from data/speakers.json)
-    //-  and render mixin talk() (see above)
-    each speaker, index in speakers
-      .talk-block
-        .event.master
-          +talk(speaker[0])
+      .commit.empty
+        .dot
 
-        .event.practical
-          +talk(speaker[1])
-
-    +branch-out()
-    
-    .event-full.general
-      .title
-        h2 Lightning talks #[small 18:30]
+    .event-full
+      h2.title Lunch Break #[small 12:00]
       .talk-description
         p.
-          There is only one rule of lightning talks: #[br]
-          5 mins and hard cut. Get on stage and share your experience!
+          We'll break for lunch, then return to the main conference.
       
       .commit.empty
         .dot
-    
-    .event-full.general
-      .title
-        h2 Thank you #[small 19:00]
+
+    .event-full
+      h2.title 2 Tracks #[small 13:00]
       .talk-description
         p.
-          The first day of PyCon CZ is over.
-          Wrap it up and enjoy the evening party.
-          See you tomorrow at the sprint venue!
+          The main conference will feature two tracks, with speakers on 
+          a range of topics.
+
+        p. 
+          Speakers and talk topics will be anounced soon.
+
+        p. 
+          Interested in being a speaker? 
+          #[a(href="http://goo.gl/forms/iEBqCcqFtI") Submit a talk proposal]!
+
       
       .commit.empty.last
         .dot
 
-    a.anchor#directions
-    h2 The venue
+
+    p.note.
+      Please note: All scheduling is subject to change before the conference 
+      starts.
     
-    p.lead.
-      The conference is going to be held at Brno University of Technology.
+    //- .branch-description
+      //- .branch-name
+        //- .master Track 1 (theme TBD)
+      //- .branch.in
+        //- img(
+          //- src="/2016/static/images/ui/branch-in.svg",
+          //- onerror="this.onerror = null; this.src = '/2016/static/images/ui/branch-in.png'"
+        //- )
+      //- .branch-name
+        //- .practical Track 2 (theme TBD)
 
-  .map
-    address
-      p.strong VUT FIT
-      p 49°11'25.8"N 16°37'13.1"E
-      p Building D
-      p Božetěchova 1/2
-      p 612 66 Brno
-      p Czech Republic
+      //- .talk-block
+        //- .event.master
+          //- .talk-description
+              //- p. 
+                  //- test
 
-    #map.vut
+
+        //- .event.practical
+          //- p.  
+            //- test
+    
+    
+
+    //- h2.visible-xs-block Talks
+    //- p.visible-xs-block.
+      //- Two parallel branches of talks are going to be held in two rooms: D105 and
+      //- D0206. The #[strong Master branch] in D105 will be about general topics,
+      //- while the #[strong Practical branch] in D0206 will present more specific ones.
+    
+    //-  Iterate over speakers object (loaded in gulpfile from data/speakers.json)
+    //-  and render mixin talk() (see above)
+    //- each speaker, index in speakers
+      //- .talk-block
+        //- .event.master
+          //- +talk(speaker[0])
+
+        //- .event.practical
+          //- +talk(speaker[1])
+
+    //- +branch-out()
+    
+    //- .event-full.general
+      //- .title
+        //- h2 Lightning talks #[small 18:30]
+      //- .talk-description
+        //- p.
+          //- There is only one rule of lightning talks: #[br]
+          //- 5 mins and hard cut. Get on stage and share your experience!
+      
+      //- .commit.empty
+        //- .dot
+    
+    //- .event-full.general
+      //- .title
+        //- h2 Thank you #[small 19:00]
+      //- .talk-description
+        //- p.
+          //- The first day of PyCon CZ is over.
+          //- Wrap it up and enjoy the evening party.
+          //- See you tomorrow at the sprint venue!
+      
+      //- .commit.empty.last
+        //- .dot

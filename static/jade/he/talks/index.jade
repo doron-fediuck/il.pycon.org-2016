@@ -21,7 +21,7 @@ mixin talk(speaker)
     
     
   .commit-holder
-    .commit
+    .commit-rtl
       img.avatar(src=avatar(speaker.avatar), alt='Photo of ' + speaker.name)
     
 mixin branch-out()
@@ -59,7 +59,7 @@ block viewport
       //- .commit.empty
         //- .dot
     
-    .event-full
+    .event-full-rtl
       h2.title.travis מרצה אורח #[br] נושא לא נקבע
       .talk-description
         .speaker Travis Oliphant
@@ -71,13 +71,13 @@ block viewport
         a.social.twitter(href="https://twitter.com/teoliphant")
           .fa.fa-twitter
          
-      .commit.first
+      .commit-rtl.first
         img.avatar(
           src=avatar("travis.jpg"),
           alt='Photo of Travis Oliphant'
         )
 
-    .event-full
+    .event-full-rtl
       h2.title.olas מרצה אורח #[br] Growing Community That Makes a Difference
       .talk-description
         .speaker Ola Sendecka
@@ -91,13 +91,13 @@ block viewport
         a.social.twitter(href="https://twitter.com/asendecka")
           .fa.fa-twitter
          
-      .commit
+      .commit-rtl
         img.avatar(
           src=avatar("ola_sendecka.jpg"),
           alt='Photo of Ola Sendecka'
         )
 
-    .event-full
+    .event-full-rtl
       h2.title.olas 
       .talk-description
         .speaker Ola Sitarska
@@ -110,15 +110,15 @@ block viewport
         a.social.twitter(href="https://twitter.com/olasitarska")
           .fa.fa-twitter
          
-      .commit
+      .commit-rtl
         img.avatar(
           src=avatar("ola_sitarska.jpg"),
           alt='Photo of Ola Sitarska'
         )
 
 
-    .event-full
-      h2.title.raymond מרצה אורח #[br] Topic TBD
+    .event-full-rtl
+      h2.title.raymond מרצה אורח #[br] נושא לא נקבע
       .talk-description
         .speaker Raymond Hettinger
         p.
@@ -129,7 +129,7 @@ block viewport
         a.social.twitter(href="https://twitter.com/raymondh")
           .fa.fa-twitter
          
-      .commit
+      .commit-rtl
         img.avatar(
           src=avatar("raymond.jpg"),
           alt='Photo of Raymond Hettinger'
@@ -141,10 +141,10 @@ block viewport
         //- p.
           //- We'll break for lunch, then return to the main conference.
       
-      .commit.empty
+      .commit-rtl.empty
         .dot
 
-    .event-full
+    .event-full-rtl
       h2.title 2 מסלולים
       .talk-description
         p.
@@ -160,7 +160,7 @@ block viewport
           #[a(href="http://goo.gl/forms/iEBqCcqFtI") שלח/י הצעת הרצאה]!
 
       
-      .commit.empty.last
+      .commit-rtl.empty.last
         .dot
 
 

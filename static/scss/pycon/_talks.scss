@@ -24,6 +24,7 @@ $commit-line-size: 10px;
 .branch,
 .branch-description,
 .commit,
+.commit-rtl,
 .commit-holder,
 .title br {
     @extend .hidden-xs;
@@ -86,6 +87,68 @@ $commit-line-size: 10px;
   .commit {
     @include make-sm-column(2);
     @include make-sm-column-pull(5);
+
+    text-align: center;
+  }
+}
+
+.event-full-rtl {
+  @include make-row();
+
+  .title {
+    @include make-sm-rtl-column(5);
+  }
+
+  small {
+    position: absolute;
+    display: block;
+    margin-top: -5px;
+    color: $brand-silent;
+
+    @media (min-width: $screen-sm) {
+      left: $grid-gutter-width / 2;
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    &.general {
+      .title {
+        // FIXME: HACK...
+        padding-top: 10px;
+      }
+
+      .talk-description {
+        @media (min-width: $screen-sm) {
+          padding-top: 10px;
+        }
+      }
+    }
+
+    .title {
+      text-align: left;
+
+      &.amber,
+      &.russell {
+        margin-bottom: 0;
+      }
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0.7em;
+    }
+  }
+
+  .talk-description {
+    @extend %commit-top-padding;
+    @include make-sm-rtl-column(5);
+    @include make-sm-rtl-column-push(2);
+  }
+
+  .commit-rtl {
+    @include make-sm-rtl-column(2);
+    @include make-sm-rtl-column-pull(5);
 
     text-align: center;
   }
@@ -240,6 +303,50 @@ $commit-line-size: 10px;
     content: " ";
     background-color: $commit-line;
     transform: translateX((-$avatar-size - $commit-line-size)/2);
+  }
+}
+
+.commit-rtl {
+  $dot-size: 35px;
+  padding: 16px 0;
+
+  .dot {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: $dot-size;
+    height: $dot-size;
+    border-radius: 50%;
+    background-color: $commit-line;
+    transform: translate(50%, -50%);
+  }
+
+  &.empty {
+    height: $avatar-size;
+
+    &:after {
+      transform: translateX($commit-line-size / 2);
+    }
+  }
+
+  &.first:after {
+    top: 50%;
+    height: 50%;
+  }
+
+  &.last:after {
+    height: 50%;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+    width: $commit-line-size;
+    height: 120%;
+    content: " ";
+    background-color: $commit-line;
+    transform: translateX(($avatar-size + $commit-line-size)/2);
   }
 }
 

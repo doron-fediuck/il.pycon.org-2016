@@ -1,0 +1,234 @@
+extends ../base
+//- HIDE FOR NOW
+//- render single speaker
+
+mixin talk(speaker)
+  .talk-description
+    h3.speaker
+      = speaker.name
+
+    .misc
+      small=speaker.time
+      small.track
+        = speaker.track
+        |  branch
+      a.social.github(href="https://github.com/" + speaker.github)
+        .fa.fa-github
+      a.social.twitter(href="https://twitter.com/" + speaker.twitter)
+        .fa.fa-twitter
+
+    p= speaker.title
+    
+    
+  .commit-holder
+    .commit-rtl
+      img.avatar(src=avatar(speaker.avatar), alt='Photo of ' + speaker.name)
+    
+mixin branch-out()
+  .branch.out
+    img(
+      src="/2016/static/images/ui/branch-out.svg",
+      onerror="this.onerror = null; this.src = '/2016/static/images/ui/branch-out.png'"
+    )
+
+block vars
+  - var pageClass = "page-talks"
+  - var activePage = "talks"
+
+block viewport
+  .container
+    h1 הרצאות ומרצים אורחים
+    
+    //- .event-full.general
+      //- h2.title Registration #[small 8:00]
+      //- .talk-description
+        //- p.
+          //- Grab your swag bag and coffee. #[br]
+          //- Meet our sponsors and get ready for a day full of awesome talks!
+      
+      //- .commit.empty.first
+        //- .dot
+
+    //- .event-full.general
+      //- h2.title The grand opening #[small 8:55]
+      //- .talk-description
+        //- p.
+          //- Welcome to the first #[strong PyCon IL]! #[br]
+          //- Proud to bring great talks and speakers, both from Israel and abroad.
+      
+      //- .commit.empty
+        //- .dot
+    
+    .event-full-rtl
+      h2.title.travis מרצה אורח #[br] נושא לא נקבע
+      .talk-description
+        .speaker Travis Oliphant
+        p.
+            מנכ"ל Continuum Analytics, מייסד NumFOCUS, יוצר NumPy, SciPy
+            ו-Numba.
+        a.social.github(href="https://github.com/teoliphant")
+          .fa.fa-github
+        a.social.twitter(href="https://twitter.com/teoliphant")
+          .fa.fa-twitter
+         
+      .commit-rtl.first
+        img.avatar(
+          src=avatar("travis.jpg"),
+          alt='Photo of Travis Oliphant'
+        )
+
+    .event-full-rtl
+      h2.title.olas מרצה אורח #[br] Growing Community That Makes a Difference
+      .talk-description
+        .speaker Ola Sendecka
+        p. 
+          ממייסדות Django Girls, חברת צוות הליבה של Django, יוצרת ערוץ
+          #[a(href="https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A") "Coding is for Girls"]
+          ב-YouTube. עובדת ב-Potato.
+
+        //- a.social.github(href="https://twitter.com/asendecka")
+          //- .fa.fa-github
+        a.social.twitter(href="https://twitter.com/asendecka")
+          .fa.fa-twitter
+         
+      .commit-rtl
+        img.avatar(
+          src=avatar("ola_sendecka.jpg"),
+          alt='Photo of Ola Sendecka'
+        )
+
+    .event-full-rtl
+      h2.title.olas 
+      .talk-description
+        .speaker Ola Sitarska
+        p.
+          ממייסדות Django Girls, חברת צוות הליבה של Django, חברת ועד
+          ב-Django Software Foundation, מפתחת בכירה ב-Potato.
+
+        a.social.github(href="https://github.com/olasitarska")
+          .fa.fa-github
+        a.social.twitter(href="https://twitter.com/olasitarska")
+          .fa.fa-twitter
+         
+      .commit-rtl
+        img.avatar(
+          src=avatar("ola_sitarska.jpg"),
+          alt='Photo of Ola Sitarska'
+        )
+
+
+    .event-full-rtl
+      h2.title.raymond מרצה אורח #[br] נושא לא נקבע
+      .talk-description
+        .speaker Raymond Hettinger
+        p.
+            מפתח ליבה של Python במשך 14 שנים. יוצר המודול collections 
+            והמודול itertools בספריה הסטנדרטית.
+        a.social.github(href="https://github.com/raymondh")
+          .fa.fa-github
+        a.social.twitter(href="https://twitter.com/raymondh")
+          .fa.fa-twitter
+         
+      .commit-rtl
+        img.avatar(
+          src=avatar("raymond.jpg"),
+          alt='Photo of Raymond Hettinger'
+        )
+
+    //- .event-full
+      //- h2.title Lunch Break #[small 12:00]
+      //- .talk-description
+        //- p.
+          //- We'll break for lunch, then return to the main conference.
+      
+      .commit-rtl.empty
+        .dot
+
+    .event-full-rtl
+      h2.title 2 מסלולים
+      .talk-description
+        p.
+          הכנס המרכזי יכיל שני מסלולים, עם מרצים
+          במגוון נושאים.
+
+        p. 
+          המרצים והנושאים יפורסמו בקרוב
+
+        p. 
+          רוצה להרצות? 
+        p. 
+          #[a(href="http://goo.gl/forms/iEBqCcqFtI") שלח/י הצעת הרצאה]!
+
+      
+      .commit-rtl.empty.last
+        .dot
+
+
+    //- p.note.
+      //- Please note: Scheduling is not final, and will likely change before the
+      //- conference starts.
+    
+    //- .branch-description
+      //- .branch-name
+        //- .master Track 1 (theme TBD)
+      //- .branch.in
+        //- img(
+          //- src="/2016/static/images/ui/branch-in.svg",
+          //- onerror="this.onerror = null; this.src = '/2016/static/images/ui/branch-in.png'"
+        //- )
+      //- .branch-name
+        //- .practical Track 2 (theme TBD)
+
+      //- .talk-block
+        //- .event.master
+          //- .talk-description
+              //- p. 
+                  //- test
+
+
+        //- .event.practical
+          //- p.  
+            //- test
+    
+    
+
+    //- h2.visible-xs-block Talks
+    //- p.visible-xs-block.
+      //- Two parallel branches of talks are going to be held in two rooms: D105 and
+      //- D0206. The #[strong Master branch] in D105 will be about general topics,
+      //- while the #[strong Practical branch] in D0206 will present more specific ones.
+    
+    //-  Iterate over speakers object (loaded in gulpfile from data/speakers.json)
+    //-  and render mixin talk() (see above)
+    //- each speaker, index in speakers
+      //- .talk-block
+        //- .event.master
+          //- +talk(speaker[0])
+
+        //- .event.practical
+          //- +talk(speaker[1])
+
+    //- +branch-out()
+    
+    //- .event-full.general
+      //- .title
+        //- h2 Lightning talks #[small 18:30]
+      //- .talk-description
+        //- p.
+          //- There is only one rule of lightning talks: #[br]
+          //- 5 mins and hard cut. Get on stage and share your experience!
+      
+      //- .commit.empty
+        //- .dot
+    
+    //- .event-full.general
+      //- .title
+        //- h2 Thank you #[small 19:00]
+      //- .talk-description
+        //- p.
+          //- The first day of PyCon CZ is over.
+          //- Wrap it up and enjoy the evening party.
+          //- See you tomorrow at the sprint venue!
+      
+      //- .commit.empty.last
+        //- .dot

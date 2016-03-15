@@ -19,14 +19,14 @@ $brand-size: 45px;
     right: 0;
     width: $brand-size;
     height: $brand-size;
-    transform: translate(-$brand-size/2, -$brand-size/2);
+    transform: translate($brand-size/2, -$brand-size/2);
 
     .home & {
       display: none;
     }
 
     @media (min-width: $screen-xs) {
-      left: 50%;
+      right: 50%;
     }
   }
 }
@@ -55,7 +55,7 @@ $brand-size: 45px;
   }
 }
 
-.navbar-nav, .navbar-nav-rtl {
+.navbar-nav {
   position: absolute;
   top: $navbar-height;
   margin: 0;
@@ -82,18 +82,6 @@ $brand-size: 45px;
   $toggle-size: 36px;
   position: absolute;
   top: ($navbar-height - $toggle-size) / 2;
-  left: 10px;
-  width: $toggle-size;
-  height: $toggle-size;
-  padding: 0;
-  border: 1px solid $brand-silent;
-  background-color: $body-bg;
-}
-
-.navbar-toggle-rtl {
-  $toggle-size: 36px;
-  position: absolute;
-  top: ($navbar-height - $toggle-size) / 2;
   right: 10px;
   width: $toggle-size;
   height: $toggle-size;
@@ -109,7 +97,7 @@ $brand-size: 45px;
     width: $offcanvas-navbar-width;
     border-right: 1px solid $brand-silent;
     background-color: $body-bg;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all .2s ease;
 
     .open & {
@@ -132,40 +120,10 @@ $brand-size: 45px;
       }
     }
   }
-
-  .navbar-nav-rtl {
-    position: fixed;
-    bottom: 0;
-    width: $offcanvas-navbar-width;
-    border-left: 1px solid $brand-silent;
-    background-color: $body-bg;
-    transform: translateX(100%);
-    transition: all .2s ease;
-
-    .open & {
-      transform: translateX(0%);
-    }
-
-    a {
-      display: block;
-      padding: 15px 10px;
-      border-bottom: 1px solid $brand-silent;
-      color: $text-color;
-      text-decoration: none;
-
-      &:hover,
-      &:focus,
-      &:active {
-        color: $text-inverted;
-        background-color: $brand-primary;
-        text-decoration: none;
-      }
-    }
-  }
 }
 
 @media (min-width: $screen-sm) {
-  .navbar-nav, .navbar-nav-rtl {
+  .navbar-nav {
     // space between items
     $item-padding: 40px;
     // enlarged space between middle items (placeholder for brand-logo)
@@ -175,7 +133,7 @@ $brand-size: 45px;
     top: 0;
 
     // Custom offset for "visual" centering of menu
-    left: 45px;
+    right: 45px;
 
     padding: 0;
     // asymetric padding to make navbar items in visual middle
@@ -191,7 +149,7 @@ $brand-size: 45px;
       font-size: 18px;
       line-height: 1.3;
 
-      text-align: left;
+      text-align: right;
       vertical-align: middle;
 
       &:after {
@@ -241,7 +199,7 @@ $brand-size: 45px;
     }
   }
 
-  .navbar-toggle, .navbar-toggle-rtl {
+  .navbar-toggle {
     display: none;
   }
 }

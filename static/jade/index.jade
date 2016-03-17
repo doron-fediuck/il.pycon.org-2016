@@ -8,14 +8,13 @@ block viewport
     img.pycon-logo(
       alt="PyCon IL",
       src='/'+year+"/static/images/pycon-il-logo-new.png",
-      onerror="this.onerror = null; this.src = '/2015/static/images/pycon-il-logo-new.png'"
+      onerror="this.onerror = null; this.src = '/2016/static/images/pycon-il-logo-new.png'"
     )
-    
-    h1
-      | PyCon Israel
-      span.year= year
 
-    .pycon-info
+    h1(style='font-family:arial; font-size: 64px; padding-right: 14px;')
+      | PyCon Israel 2016
+
+    .pycon-info(style='font-family:arial; font-size: 56px; padding-right: 14px;')
       p.pycon-location Tel Aviv, Israel
       p.pycon-date May 2-3
 
@@ -39,12 +38,6 @@ block viewport
         p. 
           The deadline for submitting a proposal is April 2nd, 2016.
 
-        //- img(src=pageUrl("/static/images/venue/ayalon_mall.jpg") height=200)
-        //- img(src=pageUrl("/static/images/venue/yes_logo.png") height=200)
-        //- p.
-          //- #[strong One] day, #[strong two] parallel tracks, #[strong two] keynotes
-          //- and #[strong ten] awesome talks. Community, web, hardware, science, devops and more.
-
       .program-item
         h2 Location
         //- .date Saturday 14th
@@ -61,8 +54,8 @@ block viewport
       p.lead.
         Registration is now open! #[a(href="https://ti.to/pycon-israel/pycon-israel-2016 ") Get your tickets here].
       p.
-        Tickets cost 250 NIS until April 2nd, after which their price will 
-        increase to 350 NIS.
+        Tickets cost 250 ₪ until April 2nd, after which their price will 
+        increase to 350 ₪.
       p.
         Space is limited, so 
         #[a(href="https://ti.to/pycon-israel/pycon-israel-2016 ") get your ticket now!]
@@ -120,11 +113,18 @@ block viewport
           a.sponsor-imper(href="http://www.applitools.com")
             img(src=pageUrl("static/images/sponsors/applitools.png"))
 
-      .news
-        .line
-        hr(width="75%", align="center")
-        h2 News
-        a(class="twitter-timeline", href="https://twitter.com/search?q=pyconil", data-widget-id="707326560232153088", data-chrome="nofooter noheader") Tweets about pyconil
-          script.
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
+    .news
+      .line
+      hr(width="75%", align="center")
+      h2(align="center") Social Media Live Feed
+      table(width="100%", cellpadding="1000", cellspacing="100", border="0", align="center")
+        tr
+          td(width="45%", valign="top")
+            a.twitter-timeline(href='https://twitter.com/search?q=pyconil', data-widget-id='707326560232153088', data-chrome="nofooter noheader") Tweets about pyconil
+            script.
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+          td(width="45%", valign="top")
+            .fb-page(data-href='https://www.facebook.com/pyconisrael', data-tabs='timeline', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-width='500', data-height='600')
+              .fb-xfbml-parse-ignore
+                blockquote(cite='https://www.facebook.com/pyconisrael')
+                  a(href='https://www.facebook.com/pyconisrael') PyCon Israel

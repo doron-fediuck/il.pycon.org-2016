@@ -8,41 +8,34 @@ block viewport
     img.pycon-logo(
       alt="PyCon IL",
       src='/'+year+"/static/images/pycon-il-logo-new.png",
-      onerror="this.onerror = null; this.src = '/2015/static/images/pycon-il-logo-new.png'"
+      onerror="this.onerror = null; this.src = '/2016/static/images/pycon-il-logo-new.png'"
     )
-    
-    h1
-      | PyCon ישראל
-      span.year= year
 
-    .pycon-info
-      p.pycon-location תל אביב, ישראל
+    h1(style='font-family:arial; font-size: 64px; padding-right: 14px;')
+      | PyCon ישראל 2016
+
+    .pycon-info(style='font-family:arial; font-size: 56px; padding-right: 14px;')
+      p.pycon-location תל-אביב, ישראל
       p.pycon-date 2–3 במאי
 
   .claim
     .container
       p.
         כנס #[strong PyCon] הראשון ב#[strong ישראל]. הצטרפו אלינו
-        ליומיים של הרצאות, התוודעות וכיף, סביב שפת התכנות Python.
+        ליומיים של הרצאות, מפגשים וכיף, סביב שפת התכנות Python.
 
   .container
     .program
       .program-item-rtl
         h2 רוצה להרצות?
         p.
-          מעוניינ/ת להעביר הרצאה בכנס Pycon הראשון בישראל?
+          מעוניין/נת להעביר הרצאה בכנס Pycon הראשון בישראל?
           #[a(href="http://goo.gl/forms/iEBqCcqFtI") שלח/י הצעת הרצאה]!
         p. 
           יש שאלות? ניתן לפנות אלינו ישירות בכתובת
           #[a(href="mailto:cfp@pycon.org.il") cfp@pycon.org.il]
         p. 
-          התאריך האחרון להגשת הצעות הוא 2 באפריל 2016.
-
-        //- img(src=pageUrl("/static/images/venue/ayalon_mall.jpg") height=200)
-        //- img(src=pageUrl("/static/images/venue/yes_logo.png") height=200)
-        //- p.
-          //- #[strong One] day, #[strong two] parallel tracks, #[strong two] keynotes
-          //- and #[strong ten] awesome talks. Community, web, hardware, science, devops and more.
+          המועד האחרון להגשת הצעות הוא ה-2 באפריל 2016.
 
       .program-item-rtl
         h2 מיקום
@@ -59,7 +52,7 @@ block viewport
       p.lead.
         ההרשמה נפתחה! #[a(href="https://ti.to/pycon-israel/pycon-israel-2016 ") כרטיסים ניתן להשיג כאן].
       p.
-        כרטיסים עולים 250 ש״ח עד אפריל 2, לאחר מכן המחיר יעלה ל-350 ש״ח.
+        עלות כרטיס היא 250 ₪ עד ל-2 באפריל, לאחר מכן עלות כרטיס תהיה 350 ₪.
       p.
         המקום מוגבל, אז קנו כרטיסים עכשיו!
 
@@ -116,11 +109,18 @@ block viewport
           a.sponsor-imper(href="http://www.applitools.com")
             img(src=pageUrl("static/images/sponsors/applitools.png"))
 
-      .news
-        .line
-        hr(width="75%", align="center")
-        h2 חדשות
-        a(class="twitter-timeline", href="https://twitter.com/search?q=pyconil", data-widget-id="707326560232153088", data-chrome="nofooter noheader") ציוצים בעניין pyconil
-          script.
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
+    .news
+      .line
+      hr(width="75%", align="center")
+      h2(align="center") עדכונים חיים מהרשתות החברתיות
+      table(width="100%", cellpadding="1000", cellspacing="100", border="0", align="center")
+        tr
+          td(width="45%", valign="top")
+            a.twitter-timeline(href='https://twitter.com/search?q=pyconil', data-widget-id='707326560232153088', data-chrome="nofooter noheader") Tweets about pyconil
+            script.
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+          td(width="45%", valign="top")
+            .fb-page(data-href='https://www.facebook.com/pyconisrael', data-tabs='timeline', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-width='500', data-height='600')
+              .fb-xfbml-parse-ignore
+                blockquote(cite='https://www.facebook.com/pyconisrael')
+                  a(href='https://www.facebook.com/pyconisrael') PyCon Israel

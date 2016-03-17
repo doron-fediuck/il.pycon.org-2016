@@ -116,11 +116,18 @@ block viewport
           a.sponsor-imper(href="http://www.applitools.com")
             img(src=pageUrl("static/images/sponsors/applitools.png"))
 
-      .news
-        .line
-        hr(width="75%", align="center")
-        h2 חדשות
-        a(class="twitter-timeline", href="https://twitter.com/search?q=pyconil", data-widget-id="707326560232153088", data-chrome="nofooter noheader") ציוצים בעניין pyconil
-          script.
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
+    .news
+      .line
+      hr(width="75%", align="center")
+      h2(align="center") עדכונים חיים מהרשתות החברתיות
+      table(width="100%", cellpadding="1000", cellspacing="100", border="0", align="center")
+        tr
+          td(width="45%", valign="top")
+            a.twitter-timeline(href='https://twitter.com/search?q=pyconil', data-widget-id='707326560232153088', data-chrome="nofooter noheader") Tweets about pyconil
+            script.
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+          td(width="45%", valign="top")
+            .fb-page(data-href='https://www.facebook.com/pyconisrael', data-tabs='timeline', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-width='500', data-height='600')
+              .fb-xfbml-parse-ignore
+                blockquote(cite='https://www.facebook.com/pyconisrael')
+                  a(href='https://www.facebook.com/pyconisrael') PyCon Israel

@@ -38,6 +38,7 @@ and static files are inside `static` directory.
         'jade/workshops/*.jade',
         'jade/he/index.jade',
         'jade/he/talks/*.jade'
+        'jade/he/about/*.jade'
       ]
       scss: 'scss/**/*.scss'
       scss_main: 'scss/pyconcz.scss'

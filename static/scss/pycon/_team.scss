@@ -12,7 +12,14 @@
 .team-member {
   @include make-xs-column(6);
   @include make-sm-column(3);
+}
 
+.team-member-rtl {
+  @include make-xs-rtl-column(6);
+  @include make-sm-rtl-column(3);
+}
+
+.team-member, .team-member-rtl {
   text-align: center;
 
   a {

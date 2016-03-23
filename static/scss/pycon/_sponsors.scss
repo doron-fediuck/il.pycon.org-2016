@@ -77,10 +77,10 @@
     @include make-sm-rtl-column(4);
   }
   .bronze & {
-    @include make-sm-column(2);
+    @include make-sm-column(3);
   }
   .bronze-rtl & {
-    @include make-sm-rtl-column(2);
+    @include make-sm-rtl-column(3);
   }
 
   img {

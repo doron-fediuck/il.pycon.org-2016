@@ -28,37 +28,34 @@ block viewport
   .container
     .program
       .program-item
-        h2 Become a Speaker
+        h2 Registration
+        p.lead.
+          Registration is now open! #[a(href="https://ti.to/pycon-israel/pycon-israel-2016 ") Get your tickets here].
         p.
-          Interested in giving a talk at the first Israeli PyCon?
-          #[a(href="http://goo.gl/forms/iEBqCcqFtI") Submit a talk proposal]!
-        p. 
-          If you have any questions, feel free to contact us directly at 
-          #[a(href="mailto:cfp@pycon.org.il") cfp@pycon.org.il]
-        p. 
-          The deadline for submitting a proposal is April 2nd, 2016.
+          Tickets cost 250 ₪ until April 2nd, after which their price will 
+          increase to 350 ₪.
+        p.
+          If you have any questions, contact us directly at #[a(href="mailto:info@pycon.org.il") info@pycon.org.il]
 
       .program-item
-        h2 Location
-        //- .date Saturday 14th
+        h2 Become a Speaker
+        p.lead.
+          Interested in giving a talk at the first Israeli PyCon?
+          #[a(href="http://goo.gl/forms/iEBqCcqFtI") Submit a talk proposal]!
         p.
-          The conference will take place in the Ayalon Mall, at the Yes Planet 
-          cinema complex.
-        .venue
-          i.fa.fa-map-marker
-          span.
-            #[a(href="https://goo.gl/maps/qvZwf6Ju3Wq") Yes Planet, Ayalon Mall, Ramat Gan]
+          If you have any questions about submissions, contact us directly at 
+          #[a(href="mailto:cfp@pycon.org.il") cfp@pycon.org.il]
+        p.
+          The deadline for submitting a proposal is April 2nd, 2016.
 
-    .registration
-      h2 Registration
-      p.lead.
-        Registration is now open! #[a(href="https://ti.to/pycon-israel/pycon-israel-2016 ") Get your tickets here].
-      p.
-        Tickets cost 250 ₪ until April 2nd, after which their price will 
-        increase to 350 ₪.
-      p.
-        Space is limited, so 
-        #[a(href="https://ti.to/pycon-israel/pycon-israel-2016 ") get your ticket now!]
+    .location
+      h2(align='center') Location
+      p(align='center', style='font-size: 24px;').
+        The conference will take place in the Ayalon Mall, at the Yes Planet cinema complex.
+      .venue(align='center')
+        i.fa.fa-map-marker
+        span.
+          #[a(href="https://goo.gl/maps/qvZwf6Ju3Wq") Yes Planet, Ayalon Mall, Ramat Gan]
 
     .djangogirls
       h2 Django Girls
@@ -117,6 +114,18 @@ block viewport
           a.sponsor-imper(href="https://www.python.org/psf/")
             img(src=pageUrl("static/images/sponsors/psf.png"))
 
+    .cancellation
+      hr(width="75%", align="center")
+      h3(align='center') Cancellation policy
+      p.
+        Registration cancellations must be submitted in writing to info@pycon.org.il. Refund amount is based on the dates your cancellation has been received and acknowledged in the following way:
+      ul#books
+        li.
+          Cancellation received by April 8: 100% refund.
+        li.
+          Cancellation received by April 21: 80% refund.
+      p.
+        Due to local holidays this year we won’t be able process cancellation requests post April 21st, and therefore there will be no refund after this date.
 
     .news
       .line

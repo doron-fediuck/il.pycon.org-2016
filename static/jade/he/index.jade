@@ -28,33 +28,35 @@ block viewport
     .program
       .program-item-rtl
         h2 רוצה להרצות?
-        p.
+        p.lead.
           מעוניין/נת להעביר הרצאה בכנס Pycon הראשון בישראל?
           #[a(href="http://goo.gl/forms/iEBqCcqFtI") שלח/י הצעת הרצאה]!
         p. 
-          יש שאלות? ניתן לפנות אלינו ישירות בכתובת
+          יש שאלות על הגשת הצעות? ניתן לפנות אלינו ישירות בכתובת
           #[a(href="mailto:cfp@pycon.org.il") cfp@pycon.org.il]
         p. 
           המועד האחרון להגשת הצעות הוא ה-2 באפריל 2016.
 
       .program-item-rtl
-        h2 מיקום
-        //- .date Saturday 14th
+        h2  הרשמה לכנס
+        p.lead.
+          ההרשמה נפתחה! #[a(href="https://ti.to/pycon-israel/pycon-israel-2016 ") כרטיסים ניתן להשיג כאן].
         p.
-          הכנס יתקיים בקניון איילון, במתחם הקולנועים Yes Planet.
-        .venue
-          i.fa.fa-map-marker
-          span.
-            #[a(href="https://goo.gl/maps/qvZwf6Ju3Wq") Yes Planet, קניון איילון, רמת גן]
+          עלות כרטיס היא 250 ₪ עד ל-2 באפריל, לאחר מכן עלות כרטיס תהיה 350 ₪.
+        p.
+          המקום מוגבל, אז קנו כרטיסים עכשיו!
+        p. 
+          יש שאלות? ניתן לפנות אלינו ישירות בכתובת
+          #[a(href="mailto:info@pycon.org.il") info@pycon.org.il]
 
-    .registration
-      h2 הרשמה
-      p.lead.
-        ההרשמה נפתחה! #[a(href="https://ti.to/pycon-israel/pycon-israel-2016 ") כרטיסים ניתן להשיג כאן].
-      p.
-        עלות כרטיס היא 250 ₪ עד ל-2 באפריל, לאחר מכן עלות כרטיס תהיה 350 ₪.
-      p.
-        המקום מוגבל, אז קנו כרטיסים עכשיו!
+    .location
+      h2(align='center') מיקום
+      p(align='center', style='font-size: 24px;').
+        הכנס יתקיים בקניון איילון, במתחם הקולנועים Yes Planet.
+      .venue(align='center', style='font-size: 24px;')
+        i.fa.fa-map-marker
+        span.
+          #[a(href="https://goo.gl/maps/qvZwf6Ju3Wq") Yes Planet, קניון איילון, רמת גן]
 
     .djangogirls
       h2 Django Girls
@@ -108,6 +110,12 @@ block viewport
         .sponsor
           a.sponsor-imper(href="http://www.applitools.com")
             img(src=pageUrl("static/images/sponsors/applitools.png"))
+
+    .cancellation
+      hr(width="75%", align="center")
+      h3(align='center') ביטול רישום לכנס
+      p(align='center').
+        ביטול יבוצע ע"י שליחת דוא"ל לכתובת info@pycon.org.il וקבלת אישור שההרשמה בוטלה. לכרטיסים שיבוטלו עד 8 באפריל יוחזר מלוא הסכום ששולם. כרטיסים שיבוטלו עד 21 באפריל יקבלו החזר של 80% מהתשלום. עקב חג הפסח לא נוכל לקבל ביטולים לאחר 21 באפריל.
 
     .news
       .line

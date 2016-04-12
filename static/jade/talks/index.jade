@@ -1,21 +1,20 @@
 extends ../base
-//- HIDE FOR NOW
-//- render single speaker
 
-mixin talk(speaker)
+mixin talk(speaker, time)
   .talk-description
     h3.speaker
       = speaker.name
 
     .misc
-      small=speaker.time
-      small.track
-        = speaker.track
-        |  branch
-      a.social.github(href="https://github.com/" + speaker.github)
-        .fa.fa-github
-      a.social.twitter(href="https://twitter.com/" + speaker.twitter)
-        .fa.fa-twitter
+      small= time
+      // small.track
+        // = speaker.track
+        // |  branch
+      // a.social.github(href="https://github.com/" + speaker.github)
+        // .fa.fa-github
+      if speaker.twitterName
+        a.social.twitter(href="https://twitter.com/" + speaker.twitterName)
+          .fa.fa-twitter
 
     p= speaker.title
     
@@ -45,7 +44,9 @@ block vars
 block viewport
   .container
     h1 Talks &amp; Keynotes
-    
+
+    h2.day-title Day 1 (May 2nd)
+
     .event-full.general
       h2.title Arrival + Snacks #[small 9:00]
       .talk-description
@@ -165,28 +166,30 @@ block viewport
       .commit.empty
         .dot
 
-    
-    
+    // Edan new code...
+    each event_obj in schedule_db["day_1"]
+      if event_obj.obj_type == "track_names"
+        .branch-description
+          .branch-name
+            .master= event_obj.track_1_name
 
-    h2.visible-xs-block Talks
+          +branch-in()
 
-    .branch-description
-      .branch-name
-        .master Master branch
-
-      +branch-in()
-
-      .branch-name
-        .practical Practical branch
-
-    each speaker, index in speakers
-      .talk-block
-        .event.master
-          +talk(speaker[0])
-
-        .event.practical
-          +talk(speaker[1])
-
+          .branch-name
+            .practical= event_obj.track_2_name
+      else if event_obj.obj_type == "2-tracks"
+        - var time = event_obj.time
+        - var track_1 = event_obj["track_1"]
+        - var track_2 = event_obj["track_2"]
+        .talk-block
+          .event.master
+            if track_1.obj_type == "talk"
+              +talk(speakers_db[track_1.speaker_id], time)
+              // p= track_1.speaker_id
+          .event.practical
+            if track_2.obj_type == "talk"
+              // p= track_2.speaker_id
+              +talk(speakers_db[track_2.speaker_id], time)
 
     +branch-out()
     

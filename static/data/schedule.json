@@ -1,0 +1,26 @@
+{
+  "day_1": 
+  [
+    {
+      "obj_type": "track_names",
+      "track_1_name": "dev & core track",
+      "track_2_name": "Data, SCI & ML track"
+    },
+    {
+      "obj_type": "2-tracks",
+      "time": "11:30",
+      "track_1": {
+        "obj_type": "talk",
+        "speaker_id": 1
+      },
+      "track_2": {
+        "obj_type": "talk",
+        "speaker_id": 2
+      }
+    },
+    {
+      "obj_type": "1-track",
+      "track_1_speaker": 0
+    }
+  ]
+}

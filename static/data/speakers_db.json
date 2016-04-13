@@ -8,5 +8,75 @@
     "name": "Sim Zacks",
     "title": "Practical Metaclasses and Descriptors",
     "avatar": "default_male.png"
+  },
+  "3": {
+    "name": "Orsolya Vasarhelyi",
+    "title": "Network Analysis with Python",
+    "avatar": "default_male.png"
+  },
+  "4": {
+    "name": "Anna Herlihy",
+    "title": "WRESTLING PYTHON INTO LLVM INTERMEDIATE REPRESENTATION",
+    "avatar": "default_male.png"
+  },
+  "5": {
+    "name": "John Schwarz",
+    "title": "Debugging Hung Python Processes With GDB",
+    "avatar": "default_male.png"
+  },
+  "6": {
+    "name": "Jonathan Arfa",
+    "title": "Algorithms to Sample From Streams - Reservoir Sampling & Variants",
+    "avatar": "default_male.png"
+  },
+  "7": {
+    "name": "Julian Berman",
+    "title": "Introduction to JSON Schema",
+    "avatar": "default_male.png"
+  },
+  "8": {
+    "name": "Eli Gur",
+    "title": "PyTest, the testing framework you've been dreaming of",
+    "avatar": "default_male.png"
+  },
+  "9": {
+    "name": "Ari Bornstein",
+    "title": "From Experimentation to Production: Pandas and Sci-Kit learn on Azure ML",
+    "avatar": "default_male.png"
+  },
+  "10": {
+    "name": "Uzi Halaby-Senerman",
+    "title": "Pandas - not just for data scientists",
+    "avatar": "default_male.png"
+  },
+  "11": {
+    "name": "Yoav Ram",
+    "title": "How to Study Evolution Using Scientific Python",
+    "avatar": "default_male.png"
+  },
+  "12": {
+    "name": "Sagiv Malihi",
+    "title": "The Many Faces of Concurrency in Python",
+    "avatar": "default_male.png"
+  },
+  "13": {
+    "name": "Ron Barak",
+    "title": "How to make Python perform like C",
+    "avatar": "default_male.png"
+  },
+  "14": {
+    "name": "Tamir Lousky",
+    "title": "Generating, automating and processing 3D graphics with Blender's python API",
+    "avatar": "default_male.png"
+  },
+  "15": {
+    "name": "Francesco Vollero",
+    "title": "Introduction to app development with OpenStack SDK",
+    "avatar": "default_male.png"
+  },
+  "16": {
+    "name": "Rony Sheer",
+    "title": "If They Build It… They will code...(lessons from a school coding club)",
+    "avatar": "default_male.png"
   }
 }

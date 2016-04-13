@@ -22,7 +22,25 @@ mixin talk(speaker, time)
   .commit-holder
     .commit
       img.avatar(src=avatar(speaker.avatar), alt='Photo of ' + speaker.name)
-    
+
+mixin in_track_title(title, time, image)
+  .talk-description
+    h3.speaker
+      = title
+
+    .misc
+      small= time
+      // small.track
+        // = speaker.track
+        // |  branch
+      // a.social.github(href="https://github.com/" + speaker.github)
+        // .fa.fa-github
+
+  .commit-holder
+    .commit
+      img.avatar(src=avatar(image), alt='Photo of ' + 'test')
+
+
 mixin branch-out()
   .branch.out
     img(
@@ -167,51 +185,60 @@ block viewport
         .dot
 
     // Edan new code...
-    each event_obj in schedule_db["day_1"]
-      if event_obj.obj_type == "track_names"
+    each event in schedule_db["day_1"]
+      if event.obj_type == "track_names"
         .branch-description
           .branch-name
-            .master= event_obj.track_1_name
+            .master= event.track_1_name
 
           +branch-in()
 
           .branch-name
-            .practical= event_obj.track_2_name
-      else if event_obj.obj_type == "2-tracks"
-        - var time = event_obj.time
-        - var track_1 = event_obj["track_1"]
-        - var track_2 = event_obj["track_2"]
+            .practical= event.track_2_name
+
+      else if event.obj_type == "2-tracks"
+        - var time = event.time
+        - var track_1 = event["track_1"]
+        - var track_2 = event["track_2"]
         .talk-block
           .event.master
             if track_1.obj_type == "talk"
               +talk(speakers_db[track_1.speaker_id], time)
               // p= track_1.speaker_id
+            else if track_1.obj_type == "title"
+              +in_track_title(track_1.title, time, track_1.avatar)
+
           .event.practical
             if track_2.obj_type == "talk"
-              // p= track_2.speaker_id
               +talk(speakers_db[track_2.speaker_id], time)
+              // p= track_1.speaker_id
+            else if track_2.obj_type == "title"
+              +in_track_title(track_2.title, time, track_2.avatar)
+      else if event.obj_type == "branch_in"
+        +branch-out()
 
-    +branch-out()
+
+    // +branch-out()
     
-    .event-full.general
-      .title
-        h2 Lightning talks #[small 18:30]
-      .talk-description
-        p.
-          There is only one rule of lightning talks: #[br]
-          5 mins and hard cut. Get on stage and share your experience!
+    // .event-full.general
+      // .title
+        // h2 Lightning talks #[small 18:30]
+      // .talk-description
+        // p.
+          // There is only one rule of lightning talks: #[br]
+          // 5 mins and hard cut. Get on stage and share your experience!
       
-      .commit.empty
-        .dot
+      // .commit.empty
+        // .dot
     
-    .event-full.general
-      .title
-        h2 Thank you #[small 19:00]
-      .talk-description
-        p.
-          The first day of PyCon CZ is over.
-          Wrap it up and enjoy the evening party.
-          See you tomorrow at the sprint venue!
+    // .event-full.general
+      // .title
+        // h2 Thank you #[small 19:00]
+      // .talk-description
+        // p.
+          // The first day of PyCon CZ is over.
+          // Wrap it up and enjoy the evening party.
+          // See you tomorrow at the sprint venue!
       
-      .commit.empty.last
-        .dot
+      // .commit.empty.last
+        // .dot

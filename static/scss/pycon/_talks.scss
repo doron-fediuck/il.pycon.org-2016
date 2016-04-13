@@ -37,6 +37,10 @@ $commit-line-size: 10px;
     @include make-sm-column(5);
   }
 
+  .keynote-text {
+    font-size: 16px;
+  }
+
   small {
     position: absolute;
     display: block;
@@ -299,7 +303,7 @@ $commit-line-size: 10px;
     top: 0;
     z-index: -1000;
     width: $commit-line-size;
-    height: 120%;
+    height: 100%;
     content: " ";
     background-color: $commit-line;
     transform: translateX((-$avatar-size - $commit-line-size)/2);

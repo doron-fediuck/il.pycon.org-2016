@@ -87,7 +87,11 @@ block viewport
     
 
     .event-full
-      h2.title.travis Keynote #1 #[br] Scaling PyData Up and Out with Anaconda #[small 9:45]
+      h2.title.travis. 
+        Keynote #1 #[br]
+        <span class="keynote-text">
+          Scaling PyData Up and Out with Anaconda #[small 9:45]
+        </span>
       .talk-description
         .speaker Travis Oliphant
         p.
@@ -105,7 +109,11 @@ block viewport
         )
 
     .event-full
-      h2.title.olas Keynote #2 #[br] Growing Community That Makes a Difference #[small 10:30]
+      h2.title.olas.
+        Keynote #2 #[br]
+        <span class="keynote-text">
+          Growing Community That Makes a Difference #[small 10:30]
+        </span>
       .talk-description
         .speaker Ola Sendecka
         p. 
@@ -214,31 +222,19 @@ block viewport
               // p= track_1.speaker_id
             else if track_2.obj_type == "title"
               +in_track_title(track_2.title, time, track_2.avatar)
-      else if event.obj_type == "branch_in"
+      else if event.obj_type == "branch_out"
         +branch-out()
+      else if event.obj_type == "event-full"
+        .event-full
+          h2.title #{event.title} #[small #{event.time}]
+          .talk-description
+            p.
+              #{event.description}
+          
+          if event.last
+            .commit.empty.last
+              .dot
+          else
+            .commit.empty
+              .dot
 
-
-    // +branch-out()
-    
-    // .event-full.general
-      // .title
-        // h2 Lightning talks #[small 18:30]
-      // .talk-description
-        // p.
-          // There is only one rule of lightning talks: #[br]
-          // 5 mins and hard cut. Get on stage and share your experience!
-      
-      // .commit.empty
-        // .dot
-    
-    // .event-full.general
-      // .title
-        // h2 Thank you #[small 19:00]
-      // .talk-description
-        // p.
-          // The first day of PyCon CZ is over.
-          // Wrap it up and enjoy the evening party.
-          // See you tomorrow at the sprint venue!
-      
-      // .commit.empty.last
-        // .dot

@@ -132,6 +132,19 @@
     },
     {
       "obj_type": "branch_out"
+    },
+    {
+      "obj_type": "event-full",
+      "time": "17:30",
+      "title": "After Party",
+      "description": ""
+    },
+    {
+      "obj_type": "event-full",
+      "time": "18:45",
+      "title": "Surprise",
+      "description": "Stay tuned for the surprise!!",
+      "last": true
     }
   ]
 }

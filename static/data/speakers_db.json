@@ -78,5 +78,85 @@
     "name": "Rony Sheer",
     "title": "If They Build It… They will code...(lessons from a school coding club)",
     "avatar": "default_male.png"
+  },
+  "17": {
+    "name": "Eli Gur",
+    "title": "Type hints in Python",
+    "avatar": "default_male.png"
+  },
+  "18": {
+    "name": "Guillaume Binet",
+    "title": "Getting started with chatops in python with errbot",
+    "avatar": "default_male.png"
+  },
+  "19": {
+    "name": "Benny Bauer",
+    "title": "Python In The Serverless Era",
+    "avatar": "default_male.png"
+  },
+  "20": {
+    "name": "To be announced",
+    "title": "To be announced",
+    "avatar": "default_male.png"
+  },
+  "21": {
+    "name": "Tom Zickel",
+    "title": "CPython byte-code and code-injection",
+    "avatar": "default_male.png"
+  },
+  "22": {
+    "name": "Benjamin Peterson",
+    "title": "Building Python with Bazel",
+    "avatar": "default_male.png"
+  },
+  "23": {
+    "name": "Gabor Szabo",
+    "title": "Fight or Flight? - dealing with real world applications in Python",
+    "avatar": "default_male.png"
+  },
+  "24": {
+    "name": "Daniel Puterman",
+    "title": "Hacking the Selenium WebDriver",
+    "avatar": "default_male.png"
+  },
+  "25": {
+    "name": "Nati Cohen",
+    "title": "When Regular Expressions are Not Enough",
+    "avatar": "default_male.png"
+  },
+  "26": {
+    "name": "Irina Gulina",
+    "title": "When Dependencies between Test Cases are Inevitable or How to test Image Instances in the Cloud",
+    "avatar": "default_male.png"
+  },
+  "27": {
+    "name": "Jonathan Schemoul",
+    "title": "Python as a brain for your devices (web developement, hardware 'IoT', etc.)",
+    "avatar": "default_male.png"
+  },
+  "28": {
+    "name": "Aleš Dujíček",
+    "title": "Running upstream Spacewalk tests using Ansible and Vagrant",
+    "avatar": "default_male.png"
+  },
+  "29": {
+    "name": "David Melamed",
+    "title": "Deep dive into threat detection in the cloud with Spark and Python",
+    "avatar": "default_male.png"
+  },
+  "30": {
+    "name": "Niv Mizrahi",
+    "title": "Packaging / dependecy hell in python",
+    "avatar": "default_male.png"
+  },
+  "31": {
+    "name": "Ilia Meerovich",
+    "title": "Quick and robust CLI creation with Click module",
+    "avatar": "default_male.png"
+  },
+  "32": {
+    "name": "Imri Goldberg",
+    "title": "Optimizing Latency",
+    "avatar": "default_male.png"
   }
 }

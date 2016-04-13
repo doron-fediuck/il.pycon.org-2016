@@ -55,6 +55,54 @@ mixin branch-in()
       onerror="this.onerror = null; this.src = '/2015/static/images/ui/branch-in.png'"
     )
 
+
+
+mixin day-schedule-loop(day)
+    each event in schedule_db[day]
+      if event.obj_type == "track_names"
+        .branch-description
+          .branch-name
+            .master= event.track_1_name
+
+          +branch-in()
+
+          .branch-name
+            .practical= event.track_2_name
+
+      else if event.obj_type == "2-tracks"
+        - var time = event.time
+        - var track_1 = event["track_1"]
+        - var track_2 = event["track_2"]
+        .talk-block
+          .event.master
+            if track_1.obj_type == "talk"
+              +talk(speakers_db[track_1.speaker_id], time)
+              // p= track_1.speaker_id
+            else if track_1.obj_type == "title"
+              +in_track_title(track_1.title, time, track_1.avatar)
+
+          .event.practical
+            if track_2.obj_type == "talk"
+              +talk(speakers_db[track_2.speaker_id], time)
+              // p= track_1.speaker_id
+            else if track_2.obj_type == "title"
+              +in_track_title(track_2.title, time, track_2.avatar)
+      else if event.obj_type == "branch_out"
+        +branch-out()
+      else if event.obj_type == "event-full"
+        .event-full
+          h2.title #{event.title} #[small #{event.time}]
+          .talk-description
+            p.
+              #{event.description}
+          
+          if event.last
+            .commit.empty.last
+              .dot
+          else
+            .commit.empty
+              .dot
+
 block vars
   - var pageClass = "page-talks"
   - var activePage = "talks"
@@ -160,81 +208,58 @@ block viewport
       .commit.empty
         .dot
     
-    //- FINISHED FIRST DAY KEYNOTES
 
-    //- Raymond WORKING
-    //- .event-full
-      //- h2.title.raymond Keynote #[br] Topic TBD
-      //- .talk-description
-        //- .speaker Raymond Hettinger
-        //- p.
-            //- Python core developer for 14 years. Creator of the collections 
-            //- module and itertools module.
-        //- a.social.github(href="https://github.com/raymondh")
-          //- .fa.fa-github
-        //- a.social.twitter(href="https://twitter.com/raymondh")
-          //- .fa.fa-twitter
-         
-      //- .commit
-        //- img.avatar(
-          //- src=avatar("raymond.jpg"),
-          //- alt='Photo of Raymond Hettinger'
-        //- )
+    // Edan new code...
+    +day-schedule-loop("day_1")
 
-    //- End raymond WORKING
+    h2.day-title Day 2 (May 3rd)
 
-    //- .event-full
-      //- h2.title Lunch Break #[small 12:00]
-      //- .talk-description
-        //- p.
-          //- We'll break for lunch, then return to the main conference.
+    .event-full.general
+      h2.title Arrival + Snacks #[small 9:00]
+      .talk-description
+        p.
+          Grab your swag bag and coffee, if you don't have it yet!
+      
+      .commit.empty.first
+        .dot
+
+    .event-full.general
+      h2.title Welcome to Day 2! #[small 9:25]
+      .talk-description
+        p.
       
       .commit.empty
         .dot
 
-    // Edan new code...
-    each event in schedule_db["day_1"]
-      if event.obj_type == "track_names"
-        .branch-description
-          .branch-name
-            .master= event.track_1_name
+    .event-full
+      h2.title.raymond.
+        Keynote #3 #[br] 
+        <span class="keynote-text">
+          Topic to be announnced #[small 9:30]
+        </span>
+      .talk-description
+        .speaker Raymond Hettinger
+        p.
+            Python core developer for 14 years. Creator of the collections 
+            module and itertools module.
+        a.social.github(href="https://github.com/raymondh")
+          .fa.fa-github
+        a.social.twitter(href="https://twitter.com/raymondh")
+          .fa.fa-twitter
+         
+      .commit
+        img.avatar(
+          src=avatar("raymond.jpg"),
+          alt='Photo of Raymond Hettinger'
+        )
 
-          +branch-in()
+    .event-full.general
+      h2.title Break #[small 10:15]
+      .talk-description
+        p.
+            #[br] Moving into two separate tracks.
+      
+      .commit.empty
+        .dot
 
-          .branch-name
-            .practical= event.track_2_name
-
-      else if event.obj_type == "2-tracks"
-        - var time = event.time
-        - var track_1 = event["track_1"]
-        - var track_2 = event["track_2"]
-        .talk-block
-          .event.master
-            if track_1.obj_type == "talk"
-              +talk(speakers_db[track_1.speaker_id], time)
-              // p= track_1.speaker_id
-            else if track_1.obj_type == "title"
-              +in_track_title(track_1.title, time, track_1.avatar)
-
-          .event.practical
-            if track_2.obj_type == "talk"
-              +talk(speakers_db[track_2.speaker_id], time)
-              // p= track_1.speaker_id
-            else if track_2.obj_type == "title"
-              +in_track_title(track_2.title, time, track_2.avatar)
-      else if event.obj_type == "branch_out"
-        +branch-out()
-      else if event.obj_type == "event-full"
-        .event-full
-          h2.title #{event.title} #[small #{event.time}]
-          .talk-description
-            p.
-              #{event.description}
-          
-          if event.last
-            .commit.empty.last
-              .dot
-          else
-            .commit.empty
-              .dot
-
+    +day-schedule-loop("day_2")

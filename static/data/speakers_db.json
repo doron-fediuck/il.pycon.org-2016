@@ -1,8 +1,8 @@
 {
   "1": {
-    "name": "Matti Pincus",
+    "name": "Matti Picus",
     "title": "What's new in PyPy and what will be next",
-    "avatar": "default_male.png"
+    "avatar": "matti-picus.jpg"
   },
   "2": {
     "name": "Sim Zacks",
@@ -22,17 +22,17 @@
   "5": {
     "name": "John Schwarz",
     "title": "Debugging Hung Python Processes With GDB",
-    "avatar": "default_male.png"
+    "avatar": "john-schwarz.jpg"
   },
   "6": {
     "name": "Jonathan Arfa",
     "title": "Algorithms to Sample From Streams - Reservoir Sampling & Variants",
-    "avatar": "default_male.png"
+    "avatar": "jonathan-arfa.jpg"
   },
   "7": {
     "name": "Julian Berman",
     "title": "Introduction to JSON Schema",
-    "avatar": "default_male.png"
+    "avatar": "julian-berman.jpg"
   },
   "8": {
     "name": "Eli Gur",
@@ -42,37 +42,37 @@
   "9": {
     "name": "Ari Bornstein",
     "title": "From Experimentation to Production: Pandas and Sci-Kit learn on Azure ML",
-    "avatar": "default_male.png"
+    "avatar": "ari-bornstein.jpg"
   },
   "10": {
     "name": "Uzi Halaby-Senerman",
     "title": "Pandas - not just for data scientists",
-    "avatar": "default_male.png"
+    "avatar": "uzi-halaby-Senerman.jpg"
   },
   "11": {
     "name": "Yoav Ram",
     "title": "How to Study Evolution Using Scientific Python",
-    "avatar": "default_male.png"
+    "avatar": "yoav-ram.jpg"
   },
   "12": {
     "name": "Sagiv Malihi",
     "title": "The Many Faces of Concurrency in Python",
-    "avatar": "default_male.png"
+    "avatar": "sagiv-malihi.jpg"
   },
   "13": {
     "name": "Ron Barak",
     "title": "How to make Python perform like C",
-    "avatar": "default_male.png"
+    "avatar": "ron-barak.jpg"
   },
   "14": {
     "name": "Tamir Lousky",
     "title": "Generating, automating and processing 3D graphics with Blender's python API",
-    "avatar": "default_male.png"
+    "avatar": "tamir-lousky.jpg"
   },
   "15": {
     "name": "Francesco Vollero",
     "title": "Introduction to app development with OpenStack SDK",
-    "avatar": "default_male.png"
+    "avatar": "francesco-vollero.jpg"
   },
   "16": {
     "name": "Rony Sheer",
@@ -87,7 +87,7 @@
   "18": {
     "name": "Guillaume Binet",
     "title": "Getting started with chatops in python with errbot",
-    "avatar": "default_male.png"
+    "avatar": "guillaume-binet.jpg"
   },
   "19": {
     "name": "Benny Bauer",
@@ -107,12 +107,12 @@
   "22": {
     "name": "Benjamin Peterson",
     "title": "Building Python with Bazel",
-    "avatar": "default_male.png"
+    "avatar": "benjamin-peterson.jpg"
   },
   "23": {
     "name": "Gabor Szabo",
     "title": "Fight or Flight? - dealing with real world applications in Python",
-    "avatar": "default_male.png"
+    "avatar": "gabor-szabo.jpg"
   },
   "24": {
     "name": "Daniel Puterman",
@@ -122,7 +122,7 @@
   "25": {
     "name": "Nati Cohen",
     "title": "When Regular Expressions are Not Enough",
-    "avatar": "default_male.png"
+    "avatar": "nati-cohen.jpg"
   },
   "26": {
     "name": "Irina Gulina",
@@ -137,7 +137,7 @@
   "28": {
     "name": "Aleš Dujíček",
     "title": "Running upstream Spacewalk tests using Ansible and Vagrant",
-    "avatar": "default_male.png"
+    "avatar": "ales.jpg"
   },
   "29": {
     "name": "David Melamed",
@@ -152,11 +152,16 @@
   "31": {
     "name": "Ilia Meerovich",
     "title": "Quick and robust CLI creation with Click module",
-    "avatar": "default_male.png"
+    "avatar": "ilia-meerovich.jpg"
   },
   "32": {
     "name": "Imri Goldberg",
     "title": "Optimizing Latency",
     "avatar": "default_male.png"
+  },
+  "33": {
+    "name": "Omer Nevo",
+    "title": "Poetry in Python: Using Markov Chains to Generate Texts",
+    "avatar": "omer-nevo.jpg"
   }
 }

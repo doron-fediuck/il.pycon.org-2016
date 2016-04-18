@@ -8,19 +8,28 @@ mixin talk(workshop)
       = workshop.title
       small 
         | by 
+      normal
         = workshop.name
+        // TBD: .avatar(src=avatar(workshop.avatar), alt='Photo of ' + workshop.name)
 
     .misc
       small
         = workshop.time
-      if workshop.github
-        a.social.github(href="https://github.com/" + workshop.github)
-          .fa.fa-github
-      if workshop.twitter
-        a.social.twitter(href="https://twitter.com/" + workshop.twitter)
-          .fa.fa-twitter
-          
-    != md(workshop.abstract)
+        |  Track: 
+        = workshop.track 
+
+    if workshop.bio
+        h4 Bio 
+            if workshop.github
+                a.social.github(href="https://github.com/" + workshop.github)
+                    .fa.fa-github
+            if workshop.twitter
+                a.social.twitter(href="https://twitter.com/" + workshop.twitter)
+                    .fa.fa-twitter
+        != md(workshop.bio)
+    if workshop.abstract
+        h4 Abstract
+        != md(workshop.abstract)
 
 block vars
   - var pageClass = "page-workshops"
@@ -28,7 +37,7 @@ block vars
 
 block viewport
   .container
-    h1 Our speakers
+    h1 Session details
     
     //-  Iterate over workshops object (loaded in gulpfile from data/workshops.json)
     //-  and render mixin talk() (see above)

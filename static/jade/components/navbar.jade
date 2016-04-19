@@ -16,7 +16,10 @@ header#top
           | Videos
       li.talks(class=activePage == "talks" ? "active" : "")
         a(href=pageUrl("talks/"))
-          | Talks / Speakers
+          | Agenda
+      li.speakers(class=activePage == "speakers" ? "active" : "")
+        a(href=pageUrl("about/speakers.html"))
+          | Sessions
       li.blog
         a(href="about/code-of-conduct.html")
           | Code of Conduct

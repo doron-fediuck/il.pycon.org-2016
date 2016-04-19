@@ -37,7 +37,7 @@
   "8": {
     "name": "Eli Gur",
     "title": "PyTest, the testing framework you've been dreaming of",
-    "avatar": "default_male.png"
+    "avatar": "eli-gur.jpg"
   },
   "9": {
     "name": "Ari Bornstein",
@@ -77,12 +77,12 @@
   "16": {
     "name": "Rony Sheer",
     "title": "If They Build It… They will code...(lessons from a school coding club)",
-    "avatar": "default_male.png"
+    "avatar": "rony-sheer.jpg"
   },
   "17": {
     "name": "Eli Gur",
     "title": "Type hints in Python",
-    "avatar": "default_male.png"
+    "avatar": "eli_gur.jpg"
   },
   "18": {
     "name": "Guillaume Binet",
@@ -92,7 +92,7 @@
   "19": {
     "name": "Benny Bauer",
     "title": "Python In The Serverless Era",
-    "avatar": "default_male.png"
+    "avatar": "benny_bauer.jpg"
   },
   "20": {
     "name": "To be announced",
@@ -117,7 +117,7 @@
   "24": {
     "name": "Daniel Puterman",
     "title": "Hacking the Selenium WebDriver",
-    "avatar": "default_male.png"
+    "avatar": "daniel-puterman.jpg"
   },
   "25": {
     "name": "Nati Cohen",
@@ -127,7 +127,7 @@
   "26": {
     "name": "Irina Gulina",
     "title": "When Dependencies between Test Cases are Inevitable or How to test Image Instances in the Cloud",
-    "avatar": "default_male.png"
+    "avatar": "irina-gulina.jpg"
   },
   "27": {
     "name": "Jonathan Schemoul",
@@ -142,12 +142,12 @@
   "29": {
     "name": "David Melamed",
     "title": "Deep dive into threat detection in the cloud with Spark and Python",
-    "avatar": "default_male.png"
+    "avatar": "davidm.png"
   },
   "30": {
     "name": "Niv Mizrahi",
     "title": "Packaging / dependecy hell in python",
-    "avatar": "default_male.png"
+    "avatar": "niv-mizrahi.jpg"
   },
   "31": {
     "name": "Ilia Meerovich",
@@ -157,7 +157,7 @@
   "32": {
     "name": "Imri Goldberg",
     "title": "Optimizing Latency",
-    "avatar": "default_male.png"
+    "avatar": "imri-goldberg.jpg"
   },
   "33": {
     "name": "Omer Nevo",

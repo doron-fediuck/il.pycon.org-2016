@@ -148,7 +148,7 @@
     "avatar": "uzi-halaby-senerman.jpg",
     "title": "Pandas - not just for data scientists",
     "abstract": "This is not a tutorial. It's an attempt to expose non data scientists experiencied pythonistas to the powerful pandas library. Most of python developers don't use pandas (either because they never heard of it, felt that it's a too steep learning curve or never thought that it will be useful for them). I intend to talk about python performance limitations and show how pandas can be used to overcome some of these limitations.",
-    "bio": "A programmer for almost 30 years. Last 5 years mostly working with Python/Django.",
+    "bio": "Chief Architect at Bluevine (https://www.bluevine.com). A programmer for almost 30 years. Last 6 years mostly working with Python/Django.",
     "company": "",
     "twitter": "uzi_hs",
     "github": "uzihs"

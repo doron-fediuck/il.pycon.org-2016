@@ -395,7 +395,7 @@
     "time": "12:00 – 12:30",
     "track": "DevOps",
     "name": "Daniel Puterman",
-    "avatar": "default_male.png",
+    "avatar": "daniel-puterman.jpg",
     "title": "Hacking the Selenium WebDriver",
     "abstract": "In this talk we would dive into the the heart of the Selenium WebDriver's python implementation. WebDriver is the de-facto automation standard for the web, and quite recently a rising start in mobile automation as well (via Appium). We will briefly describe the WebDriver wire protocol, which is the API layer of the automation, and see its python implementation. We will build a quick SDK wrapping the WebDriver class: It will be able to record (and export) actions done using a WebDriver instance, which can later be viewed or replayed by external tools.",
     "bio": "R&D Director @ Applitools",

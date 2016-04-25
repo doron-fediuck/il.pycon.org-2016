@@ -16,8 +16,8 @@ mixin talk(speaker, time)
         a.social.twitter(href="https://twitter.com/" + speaker.twitterName)
           .fa.fa-twitter
 
-    p= speaker.title
-    
+    p
+      a(href=pageUrl("about/speakers.html##{speaker.title}"))= speaker.title
     
   .commit-holder
     .commit
@@ -138,7 +138,7 @@ block viewport
       h2.title.travis. 
         Keynote #1 #[br]
         <span class="keynote-text">
-          Scaling PyData Up and Out with Anaconda #[small 9:45]
+          #[a(href=pageUrl("about/speakers.html#Keynotes: Scaling PyData Up and Out with Anaconda")) Scaling PyData Up and Out with Anaconda] #[small 9:45]
         </span>
       .talk-description
         .speaker Travis Oliphant

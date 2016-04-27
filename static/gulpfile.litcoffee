@@ -204,7 +204,7 @@ files to cache (for speedup of consecutive upload) and report changes.
         markdown: marked
         locals:
           debug: Debug
-          speakers: JSON.parse fs.readFileSync './data/speakers.json'
+          sessions: JSON.parse fs.readFileSync './data/sessions.json'
           speakers_db: JSON.parse fs.readFileSync './data/speakers_db.json'
           schedule_db: JSON.parse fs.readFileSync './data/schedule.json'
           workshops: JSON.parse fs.readFileSync './data/workshops.json'

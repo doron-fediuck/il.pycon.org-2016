@@ -7,17 +7,17 @@
   "2": {
     "name": "Sim Zacks",
     "title": "Practical Metaclasses and Descriptors",
-    "avatar": "default_male.png"
+    "avatar": "sim.jpg"
   },
   "3": {
     "name": "Orsolya Vasarhelyi",
     "title": "Network Analysis with Python",
-    "avatar": "default_male.png"
+    "avatar": "orsolya-vasarhelyi.jpg"
   },
   "4": {
     "name": "Anna Herlihy",
     "title": "Wrestling Python into LLVM Intermediate Representation",
-    "avatar": "default_male.png"
+    "avatar": "anna-herlihy.jpeg"
   },
   "5": {
     "name": "John Schwarz",
@@ -132,7 +132,7 @@
   "27": {
     "name": "Jonathan Schemoul",
     "title": "Python as a brain for your devices (web developement, hardware 'IoT', etc.)",
-    "avatar": "default_male.png"
+    "avatar": "jonathan-schemoul.jpg"
   },
   "28": {
     "name": "Aleš Dujíček",

@@ -5,7 +5,7 @@ extends ../base
 mixin talk(session)
   if session.title
     .workshop
-      h3(id=session.title)
+      h3(id=crypto.createHash('sha1').update(session.title).digest("hex").substr(1,16))
         = session.title
         if session.name
           small

@@ -211,6 +211,7 @@ files to cache (for speedup of consecutive upload) and report changes.
           pageUrl: (path) -> "/2016/#{path}"
           avatar: (filename) -> "/2016/static/images/speakers/#{filename}"
           md: require("marked")
+          crypto: require("crypto")
 
       gulp.src Source.jade, {base: "./jade"}
       .pipe defaultPlumber()

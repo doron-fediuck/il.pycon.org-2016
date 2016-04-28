@@ -17,7 +17,8 @@ mixin talk(speaker, time)
           .fa.fa-twitter
 
     p
-      a(href=pageUrl("about/speakers.html##{speaker.title}"))= speaker.title
+      a(href=pageUrl("about/speakers.html#"+crypto.createHash('sha1').update(speaker.title).digest('hex').substr(1,16)))
+         = speaker.title
     
   .commit-holder
     .commit
@@ -106,7 +107,13 @@ mixin day-schedule-loop(day)
 block vars
   - var pageClass = "page-talks"
   - var activePage = "talks"
-
+  - var keyNoteTitle1 = "Scaling PyData Up and Out with Anaconda"
+  - var keyNoteTitle2 = "Growing Community That Makes a Difference"
+  - var keyNoteTitle3 = "Topic to be announced"
+  - var keyNoteId1 = crypto.createHash('sha1').update("Keynotes: "+keyNoteTitle1).digest("hex").substr(1,16)
+  - var keyNoteId2 = crypto.createHash('sha1').update("Keynotes: "+keyNoteTitle2).digest("hex").substr(1,16)
+  - var keyNoteId3 = crypto.createHash('sha1').update("Keynotes session").digest("hex").substr(1,16)
+  
 block viewport
   .container
     h1 Agenda &amp; Tracks
@@ -138,7 +145,7 @@ block viewport
       h2.title.travis. 
         Keynote #1 #[br]
         <span class="keynote-text">
-          #[a(href=pageUrl("about/speakers.html#Keynotes: Scaling PyData Up and Out with Anaconda")) Scaling PyData Up and Out with Anaconda] #[small 9:45]
+          #[a(href=pageUrl("about/speakers.html##{keyNoteId1}")) #{keyNoteTitle1}] #[small 9:45]
         </span>
       .talk-description
         .speaker Travis Oliphant
@@ -160,7 +167,7 @@ block viewport
       h2.title.olas.
         Keynote #2 #[br]
         <span class="keynote-text">
-          Growing Community That Makes a Difference #[small 10:30]
+          #[a(href=pageUrl("about/speakers.html##{keyNoteId2}")) #{keyNoteTitle2}] #[small 10:30]
         </span>
       .talk-description
         .speaker Ola Sendecka
@@ -235,7 +242,7 @@ block viewport
       h2.title.raymond.
         Keynote #3 #[br] 
         <span class="keynote-text">
-          Topic to be announced #[small 9:30]
+          #[a(href=pageUrl("about/speakers.html##{keyNoteId3}")) #{keyNoteTitle3}] #[small 9:30]
         </span>
       .talk-description
         .speaker Raymond Hettinger

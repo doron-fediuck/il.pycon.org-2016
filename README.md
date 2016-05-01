@@ -65,5 +65,4 @@ This project is gratefully built on PyCon CZ's 2015 website.
 
 License
 -------
-
-MIT
+The MIT License. See [LICENSE.md](LICENSE.md) for details.

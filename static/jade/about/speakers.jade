@@ -1,52 +1,53 @@
 extends ../base
 //- HIDE FOR NOW
-//- render single speaker
+//- render single session
 
-mixin talk(workshop)
-  .workshop
-    h3
-      = workshop.title
-      if workshop.name
+mixin talk(session)
+  if session.title
+    .workshop
+      h3(id=crypto.createHash('sha1').update(session.title).digest("hex").substr(1,16))
+        = session.title
+        if session.name
+          small
+              |  by 
+          normal
+              = session.name
+
+      if session.avatar
+          img.avatar(src=avatar(session.avatar),alt='')
+      if session.avatar2
+          img.avatar(src=avatar(session.avatar2),alt='')
+
+      .misc
         small
-            |  by 
-        normal
-            = workshop.name
+          = session.time
+          if session.track
+              |  Track:
+              = session.track
 
-    if workshop.avatar
-        img.avatar(src=avatar(workshop.avatar),alt='')
-    if workshop.avatar2
-        img.avatar(src=avatar(workshop.avatar2),alt='')
+      if session.bio
+          h4 Bio
+              if session.github
+                  a.social.github(href="https://github.com/" + session.github)
+                      .fa.fa-github
+              if session.twitter
+                  a.social.twitter(href="https://twitter.com/" + session.twitter)
+                      .fa.fa-twitter
+          != md(session.bio)
 
-    .misc
-      small
-        = workshop.time
-        if workshop.track
-            |  Track:
-            = workshop.track
+      if session.bio2
+          h4 Bio 
+              if session.github2
+                  a.social.github(href="https://github.com/" + session.github2)
+                      .fa.fa-github
+              if session.twitter2
+                  a.social.twitter(href="https://twitter.com/" + session.twitter2)
+                      .fa.fa-twitter
+          != md(session.bio2)
 
-    if workshop.bio
-        h4 Bio
-            if workshop.github
-                a.social.github(href="https://github.com/" + workshop.github)
-                    .fa.fa-github
-            if workshop.twitter
-                a.social.twitter(href="https://twitter.com/" + workshop.twitter)
-                    .fa.fa-twitter
-        != md(workshop.bio)
-
-    if workshop.bio2
-        h4 Bio 
-            if workshop.github2
-                a.social.github(href="https://github.com/" + workshop.github2)
-                    .fa.fa-github
-            if workshop.twitter2
-                a.social.twitter(href="https://twitter.com/" + workshop.twitter2)
-                    .fa.fa-twitter
-        != md(workshop.bio2)
-
-    if workshop.abstract
-        h4 Abstract
-        != md(workshop.abstract)
+      if session.abstract
+          h4 Abstract
+          != md(session.abstract)
 
 block vars
   - var pageClass = "page-workshops"
@@ -56,9 +57,9 @@ block viewport
   .container
     h1 Session details
     
-    //-  Iterate over workshops object (loaded in gulpfile from data/workshops.json)
+    //-  Iterate over session objects (loaded in gulpfile from data/sessions.json)
     //-  and render mixin talk() (see above)
-    each speaker, index in speakers
-      +talk(speaker[0])
-      +talk(speaker[1])
+    each session, index in sessions
+      +talk(session[0])
+      +talk(session[1])
   

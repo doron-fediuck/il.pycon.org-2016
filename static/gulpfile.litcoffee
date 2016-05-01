@@ -204,13 +204,14 @@ files to cache (for speedup of consecutive upload) and report changes.
         markdown: marked
         locals:
           debug: Debug
-          speakers: JSON.parse fs.readFileSync './data/speakers.json'
+          sessions: JSON.parse fs.readFileSync './data/sessions.json'
           speakers_db: JSON.parse fs.readFileSync './data/speakers_db.json'
           schedule_db: JSON.parse fs.readFileSync './data/schedule.json'
           workshops: JSON.parse fs.readFileSync './data/workshops.json'
           pageUrl: (path) -> "/2016/#{path}"
           avatar: (filename) -> "/2016/static/images/speakers/#{filename}"
           md: require("marked")
+          crypto: require("crypto")
 
       gulp.src Source.jade, {base: "./jade"}
       .pipe defaultPlumber()

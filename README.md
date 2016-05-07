@@ -1,9 +1,6 @@
-<!-- [![Circle CI](https://circleci.com/gh/pyvec/cz.pycon.org-2015.svg?style=svg)](https://circleci.com/gh/pyvec/cz.pycon.org-2015) -->
-
 PyCon IL 2016 -- early adopters version
 =======================================
 
-<!-- Welcome! It's really going to happen this year. The Czech PyCon, local Python conference for anyone interested in Python programming language. -->
 Welcome! This is the early repository of PyCon IL, the first Israeli PyCon.
 
 Join us

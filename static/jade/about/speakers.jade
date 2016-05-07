@@ -45,6 +45,10 @@ mixin talk(session)
                       .fa.fa-twitter
           != md(session.bio2)
 
+      if session.pdf
+          h4 Slides (PDF format): 
+            a.social.pdf(href='/'+year+"/static/sessions/" + session.pdf, target="_blank")
+                .fa.fa-file-pdf-o
       if session.abstract
           h4 Abstract
           != md(session.abstract)

@@ -431,6 +431,10 @@ small.workshop-time {
     color: $twitter-color;
   }
 
+  &.pdf:hover {
+    color: $pdf-color;
+  }
+
   .master & {
     margin-right: 10px;
     margin-left: 0;

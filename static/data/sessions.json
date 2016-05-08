@@ -35,7 +35,7 @@
     "company": "Continuum Analytics",
     "twitter": "teoliphant",
     "github": "teoliphant",
-    "pdf": "travis-oliphant.pdf"
+    "slides": "travis-oliphant.pdf"
   },
   {
     "time": "10:30 – 11:15",
@@ -66,7 +66,7 @@
     "company": "",
     "twitter": "",
     "github": "mattip",
-    "pdf": "matti-picus.pdf"
+    "slides": "matti-picus.pdf"
   },
   {
     "time": "11:30 – 12:00",
@@ -79,7 +79,8 @@
     "company": "",
     "twitter": "",
     "github": "velf",
-    "pdf": "orsolya-vasarhelyi.pdf"
+    "slides": "orsolya-vasarhelyi.pdf",
+    "slidesother": "http://prezi.com/szsbgd2ortmu/?utm_campaign=share&utm_medium=copy&rc=ex0share"
   }
   ], [
   {
@@ -93,7 +94,7 @@
     "company": "RedHat",
     "twitter": "",
     "github": "",
-    "pdf": "sim-zacks.pdf"
+    "slides": "sim-zacks.pdf"
   },
   {
     "time": "12:00 – 12:30",
@@ -106,7 +107,7 @@
     "company": "",
     "twitter": "",
     "github": "",
-    "pdf": "anna-herlihy.pdf"
+    "slides": "anna-herlihy.pdf"
   }
   ], [
   {
@@ -120,7 +121,7 @@
     "company": "",
     "twitter": "john_jschwarz",
     "github": "jschwarz89",
-    "pdf": "john-schwarz.pdf"
+    "slides": "john-schwarz.pdf"
   },
   {
     "time": "13:30 – 14:00",
@@ -133,7 +134,7 @@
     "company": "",
     "twitter": "jonarfa",
     "github": "jarfa",
-    "pdf": "jonathan-arfa.pdf"
+    "slides": "jonathan-arfa.pdf"
   }
   ], [
   {
@@ -147,7 +148,7 @@
     "company": "",
     "twitter": "JulianWasTaken",
     "github": "Julian",
-    "pdf": "julian-berman.pdf"
+    "slides": "julian-berman.pdf"
   },
   {
     "time": "14:00 – 14:30",
@@ -160,7 +161,7 @@
     "company": "",
     "twitter": "uzi_hs",
     "github": "uzihs",
-    "pdf": "uzi-hs.pdf"
+    "slides": "uzi-hs.pdf"
   }
   ], [
   {
@@ -174,7 +175,7 @@
     "company": "",
     "twitter": "eligur1",
     "github": "eligur",
-    "pdf": "eli-gur-pytest.pdf"
+    "slides": "eli-gur-pytest.pdf"
   },
   {
     "time": "14:30 – 15:00",
@@ -187,7 +188,7 @@
     "company": "Microsoft",
     "twitter": "pythiccoder",
     "github": "aribornstein",
-    "pdf": "ari-bornstein.pdf"
+    "slides": "ari-bornstein.pdf"
   }
   ], [
   {
@@ -201,7 +202,8 @@
     "company": "",
     "twitter": "yoavram",
     "github": "yoavram",
-    "pdf": "yoav-ram.pdf"
+    "slides": "yoav-ram.pdf",
+    "slidesother": "https://github.com/yoavram/PyConIL2016"
   },
   {
     "time": "15:00 – 15:30",
@@ -227,7 +229,8 @@
     "company": "Cisco",
     "twitter": "sagiv",
     "github": "sagivmalihi",
-    "pdf": "sagiv-malihi.pdf"
+    "slides": "sagiv-malihi.pdf",
+    "slidesother": "https://docs.google.com/presentation/d/1OM3UkcwZIjESw9M4peTLRYxc327vHS2F9P_LCdAZ78g/edit?usp=sharing"
   },
   {
     "time": "15:30 – 16:00",
@@ -253,7 +256,7 @@
     "company": "",
     "twitter": "",
     "github": "",
-    "pdf": "rom-barak.pdf"
+    "slides": "rom-barak.pdf"
   },
   {
     "time": "16:00 – 16:30",
@@ -266,7 +269,7 @@
     "company": "",
     "twitter": "",
     "github": "",
-    "pdf": "omer-nevo.pdf"
+    "slides": "omer-nevo.pdf"
   }
   ], [
   {
@@ -280,7 +283,7 @@
     "company": "Red Hat",
     "twitter": "fvollero",
     "github": "razorinc",
-    "pdf": "francesco-vollerol.pdf"
+    "slides": "francesco-vollerol.pdf"
   },
   {
     "time": "16:30 – 17:00",
@@ -293,7 +296,7 @@
     "company": "",
     "twitter": "rony_sheer",
     "github": "ronysh",
-    "pdf": "rony-sheer.pdf"
+    "slides": "rony-sheer.pdf"
   }
   ], [
   {
@@ -307,7 +310,7 @@
     "company": "",
     "twitter": "raymondh",
     "github": "raymondh",
-    "pdf": "raymond-hettinger.pdf"
+    "slides": "raymond-hettinger.pdf"
   },
   {
     "time": "10:15 – 10:30",
@@ -333,7 +336,7 @@
     "company": "",
     "twitter": "eligur1",
     "github": "eligur",
-    "pdf": "eli-gur-typehints.pdf"
+    "slides": "eli-gur-typehints.pdf"
   },
   {
     "time": "10:30 – 11:00",
@@ -346,7 +349,7 @@
     "company": "Google",
     "twitter": "gbin",
     "github": "gbin",
-    "pdf": "guillaume-binet.pdf"
+    "slides": "guillaume-binet.pdf"
   }
   ], [
   {
@@ -360,7 +363,7 @@
     "company": "",
     "twitter": "benikbauer",
     "github": "bennybauer",
-    "pdf": "benny-bauer.pdf"
+    "slides": "benny-bauer.pdf"
   },
   {
     "time": "11:00 – 11:30",
@@ -373,7 +376,7 @@
     "company": "Red Hat",
     "twitter": "IliaMeerovich",
     "github": "iluxame",
-    "pdf": "ilia-meerovich.pdf"
+    "slides": "ilia-meerovich.pdf"
   }
   ], [
   {
@@ -387,7 +390,8 @@
     "company": "",
     "twitter": "",
     "github": "",
-    "pdf": "tom-zickel.pdf"
+    "slides": "tom-zickel.pdf",
+    "slidesother": "http://tom.zickel.org/pyconil-2016"
   },
   {
     "time": "11:30 – 12:00",
@@ -400,7 +404,7 @@
     "company": "",
     "twitter": "",
     "github": "benjaminp",
-    "pdf": "benjamin-peterson.pdf"
+    "slides": "benjamin-peterson.pdf"
   }
   ], [
   {
@@ -414,7 +418,7 @@
     "company": "",
     "twitter": "szabgab",
     "github": "szabgab",
-    "pdf": "gabor-szabo.pdf"
+    "slides": "gabor-szabo.pdf"
   },
   {
     "time": "12:00 – 12:30",
@@ -427,7 +431,7 @@
     "company": "Applitools",
     "twitter": "",
     "github": "",
-    "pdf": "daniel-puterman.pdf"
+    "slides": "daniel-puterman.pdf"
   }
   ], [
   {
@@ -441,7 +445,7 @@
     "company": "",
     "twitter": "nocoot",
     "github": "natict",
-    "pdf": "nati-cohen.pdf"
+    "slides": "nati-cohen.pdf"
   },
   {
     "time": "13:30 – 14:00",
@@ -479,7 +483,7 @@
     "company": "Red Hat",
     "twitter": "",
     "github": "alda519",
-    "pdf": "ales-dujicek.pdf"
+    "slides": "ales-dujicek.pdf"
   }
   ], [
   {
@@ -493,7 +497,7 @@
     "company": "CloudLock",
     "twitter": "",
     "github": "",
-    "pdf": "david-melamed.pdf"
+    "slides": "david-melamed.pdf"
   },
   {
     "time": "14:30 – 15:00",
@@ -519,7 +523,7 @@
     "company": "Invertex",
     "twitter": "",
     "github": "tlousky",
-    "pdf": "tamir-lousky.pdf"
+    "slides": "tamir-lousky.pdf"
   },
   {
     "time": "15:00 – 15:30",
@@ -545,7 +549,7 @@
     "company": "Cymmetria",
     "twitter": "lorgandon",
     "github": "",
-    "pdf": "imri-goldberg.pdf"
+    "slides": "imri-goldberg.pdf"
   },
   {
     "time": "15:30 – 16:00",

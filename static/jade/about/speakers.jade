@@ -13,6 +13,13 @@ mixin talk(session)
           normal
               = session.name
 
+            if session.slides
+                a.social.pdf(href='/'+year+"/static/sessions/" + session.slides, target="_blank")
+                    .fa.fa-file-pdf-o
+            if session.slidesother
+                a.social.pdf(href=session.slidesother, target="_blank")
+                    .fa.fa-link 
+
       if session.avatar
           img.avatar(src=avatar(session.avatar),alt='')
       if session.avatar2
@@ -56,7 +63,8 @@ block vars
 block viewport
   .container
     h1 Session details
-    
+    b All slides linked in this page are published under CC-BY v4.0 license unless specifically stated otherwise.
+
     //-  Iterate over session objects (loaded in gulpfile from data/sessions.json)
     //-  and render mixin talk() (see above)
     each session, index in sessions

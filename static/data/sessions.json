@@ -34,7 +34,8 @@
     "bio": "CEO of Continuum Analytics, NumFOCUS founder, NumPy, SciPy and Numba creator.",
     "company": "Continuum Analytics",
     "twitter": "teoliphant",
-    "github": "teoliphant"
+    "github": "teoliphant",
+    "slides": "travis-oliphant.pdf"
   },
   {
     "time": "10:30 – 11:15",
@@ -51,7 +52,8 @@
     "bio2": "Ola Sitarska: Co-founder of Django Girls, part of Django Core Team, board member of Django Software Foundation, Senior Developer at Potato.",
     "company2": "",
     "twitter2": "olasitarska",
-    "github2": "olasitarska"
+    "github2": "olasitarska",
+    "slides": "ola-and-ola.pdf"
   }
 ], [
   {
@@ -64,7 +66,8 @@
     "bio": "Core PyPy developer and open source advocate, I have been teaching and working with Python for a decade.",
     "company": "",
     "twitter": "",
-    "github": "mattip"
+    "github": "mattip",
+    "slides": "matti-picus.pdf"
   },
   {
     "time": "11:30 – 12:00",
@@ -76,7 +79,9 @@
     "bio": "Phd Student in networks science at Central European University, Center for Network Science. 5+ years experience in data analyst, wannabe data journalist and member of the Hungarian Django Girls Community.",
     "company": "",
     "twitter": "",
-    "github": "velf"
+    "github": "velf",
+    "slides": "orsolya-vasarhelyi.pdf",
+    "slidesother": "http://prezi.com/szsbgd2ortmu/?utm_campaign=share&utm_medium=copy&rc=ex0share"
   }
   ], [
   {
@@ -89,7 +94,8 @@
     "bio": "20 years of Python programming. Experienced in all stages of the software development life-cycle. Areas of expertise: software development, databases, system.",
     "company": "RedHat",
     "twitter": "",
-    "github": ""
+    "github": "",
+    "slides": "sim-zacks.pdf"
   },
   {
     "time": "12:00 – 12:30",
@@ -101,7 +107,8 @@
     "bio": "Anna Herlihy is a software engineer working for MongoDB in Stockholm. She is a contributor to PyMongo, Monary, MongoDB, and others, as well the maintainer of Mongo-Connector. She enjoys finding abandoned open source projects and contributing.",
     "company": "",
     "twitter": "",
-    "github": ""
+    "github": "",
+    "slides": "anna-herlihy.pdf"
   }
   ], [
   {
@@ -114,7 +121,8 @@
     "bio": "Instructor and Teacher (among others) in the intelligence core, IDF",
     "company": "",
     "twitter": "john_jschwarz",
-    "github": "jschwarz89"
+    "github": "jschwarz89",
+    "slides": "john-schwarz.pdf"
   },
   {
     "time": "13:30 – 14:00",
@@ -126,7 +134,8 @@
     "bio": "Data Scientist at Magnetic (New York City, USA)",
     "company": "",
     "twitter": "jonarfa",
-    "github": "jarfa"
+    "github": "jarfa",
+    "slides": "jonathan-arfa.pdf"
   }
   ], [
   {
@@ -139,7 +148,8 @@
     "bio": "Julian is the Director of Platform Engineering at Magnetic (http://www.magnetic.com/), a frequent contributor to the NYC Python Meetup group and a testing lover. He can also be found most hours of the day as tos9 on Freenode in more channels than he can count, including #python.",
     "company": "",
     "twitter": "JulianWasTaken",
-    "github": "Julian"
+    "github": "Julian",
+    "slides": "julian-berman.pdf"
   },
   {
     "time": "14:00 – 14:30",
@@ -151,7 +161,8 @@
     "bio": "Chief Architect at Bluevine (https://www.bluevine.com). A programmer for almost 30 years. Last 6 years mostly working with Python/Django.",
     "company": "",
     "twitter": "uzi_hs",
-    "github": "uzihs"
+    "github": "uzihs",
+    "slides": "uzi-hs.pdf"
   }
   ], [
   {
@@ -164,7 +175,8 @@
     "bio": "Serial entrepreneur (co-founded Mobix, Silver-Kite, Flowinspect, CorrSight), experienced VP R&D, Graduate of the prestigious IDF Talpiyot, MSc Cum-Laude in computer sciences.",
     "company": "",
     "twitter": "eligur1",
-    "github": "eligur"
+    "github": "eligur",
+    "slides": "eli-gur-pytest.pdf"
   },
   {
     "time": "14:30 – 15:00",
@@ -176,7 +188,8 @@
     "bio": "Ari Bornstein is a Microsoft Developer Evangelist out of New York City. He works with developers from Universities, Start-Ups, Fortune 500s, and Local Tech Communities on Consumer Cloud and Client Solutions. Ari is passionate about many things ranging from computer science to desert archeology. Prior to working at Microsoft, Ari worked with the Inova Hospital System in Fairfax VA to build Sci-Kit Learn machine learning classifiers that detect references to new treatments in medical literature.",
     "company": "Microsoft",
     "twitter": "pythiccoder",
-    "github": "aribornstein"
+    "github": "aribornstein",
+    "slides": "ari-bornstein.pdf"
   }
   ], [
   {
@@ -189,7 +202,9 @@
     "bio": "Recently finished PhD in Mathematical & Computational Biology at Tel-Aviv University... Programming in Python since 2002... Teaching Python programming since 2011... Using Scientific Python (NumPy, SciPy, Matplotlib, IPython, Pandas) to research Evolutionary Theory since 2012... Gave presentations at several scientific conferences in Israel, USA, and UK.",
     "company": "",
     "twitter": "yoavram",
-    "github": "yoavram"
+    "github": "yoavram",
+    "slides": "yoav-ram.pdf",
+    "slidesother": "https://github.com/yoavram/PyConIL2016"
   },
   {
     "time": "15:00 – 15:30",
@@ -214,7 +229,9 @@
     "bio": "Currently a Software Architect at Cisco",
     "company": "Cisco",
     "twitter": "sagiv",
-    "github": "sagivmalihi"
+    "github": "sagivmalihi",
+    "slides": "sagiv-malihi.pdf",
+    "slidesother": "https://docs.google.com/presentation/d/1OM3UkcwZIjESw9M4peTLRYxc327vHS2F9P_LCdAZ78g/edit?usp=sharing"
   },
   {
     "time": "15:30 – 16:00",
@@ -239,7 +256,8 @@
     "bio": "https://il.linkedin.com/in/ronbarak",
     "company": "",
     "twitter": "",
-    "github": ""
+    "github": "",
+    "slides": "rom-barak.pdf"
   },
   {
     "time": "16:00 – 16:30",
@@ -251,7 +269,8 @@
     "bio": "Over a decade of algorithms research at 8200, mainly using Python. World Universities Debating Champion, European Universities Debating Champion, Public speaking coach BA in mathematics and computer science with honors from Tel Aviv University CEO & Co-Founder at Shoptimally.",
     "company": "",
     "twitter": "",
-    "github": ""
+    "github": "",
+    "slides": "omer-nevo.pdf"
   }
   ], [
   {
@@ -264,7 +283,8 @@
     "bio": "Open Source Developer, OpenStack Solution Architect @ Red Hat, opensource contributor, language avid learner and pursuing happiness.",
     "company": "Red Hat",
     "twitter": "fvollero",
-    "github": "razorinc"
+    "github": "razorinc",
+    "slides": "francesco-vollerol.pdf"
   },
   {
     "time": "16:30 – 17:00",
@@ -276,7 +296,8 @@
     "bio": "Rony Sheer is a Teacher who tries to solve teacher problems with web apps. Once a week, he goes to TichonNet High School in Tel Aviv and hacks with students. Rony has an M.F.A. in Classical Theatre from Columbia University and did not know coding was an art until...",
     "company": "",
     "twitter": "rony_sheer",
-    "github": "ronysh"
+    "github": "ronysh",
+    "slides": "rony-sheer.pdf"
   }
   ], [
   {
@@ -289,7 +310,8 @@
     "bio": "Python core developer for 14 years. Creator of the collections module and itertools module.",
     "company": "",
     "twitter": "raymondh",
-    "github": "raymondh"
+    "github": "raymondh",
+    "slides": "raymond-hettinger.pdf"
   },
   {
     "time": "10:15 – 10:30",
@@ -314,7 +336,8 @@
     "bio": "Serial entrepreneur (co-founded Mobix, Silver-Kite, Flowinspect, CorrSight), experienced VP R&D, Graduate of the prestigious IDF Talpiyot, MSc Cum-Laude in computer sciences.",
     "company": "",
     "twitter": "eligur1",
-    "github": "eligur"
+    "github": "eligur",
+    "slides": "eli-gur-typehints.pdf"
   },
   {
     "time": "10:30 – 11:00",
@@ -326,7 +349,8 @@
     "bio": "Guillaume has been at Google since 2013 and is working on the Signals team for Google Cloud. Previously, Guillaume held responsibilities at various startups in Europe and in the US, the last one being API techlead at Twilio. Author of Errbot (http://errbot.io), when he is not working or hacking on it, you can find him car racing, scuba diving or tinkering on his latest electronic project.",
     "company": "Google",
     "twitter": "gbin",
-    "github": "gbin"
+    "github": "gbin",
+    "slides": "guillaume-binet.pdf"
   }
   ], [
   {
@@ -339,7 +363,8 @@
     "bio": "Benny Bauer is a Software Architect at Autodesk Israel. In the last years he has been busy with re-architecting the AutoCAD backend services, shifting the development from Java to Python, from monolith to microservices. Besides being a cloud geek, he's into rock climbing and hiking.",
     "company": "",
     "twitter": "benikbauer",
-    "github": "bennybauer"
+    "github": "bennybauer",
+    "slides": "benny-bauer.pdf"
   },
   {
     "time": "11:00 – 11:30",
@@ -351,7 +376,8 @@
     "bio": "In love with Python for almost 8 years. True believer in The Zen of Python and in the open-source way. I'm working on complex automation frameworks and creation of APIs and CLIs in Python. ",
     "company": "Red Hat",
     "twitter": "IliaMeerovich",
-    "github": "iluxame"
+    "github": "iluxame",
+    "slides": "ilia-meerovich.pdf"
   }
   ], [
   {
@@ -364,7 +390,9 @@
     "bio": "An avid long time Python user which likes to stretch what is possible to use the language for.",
     "company": "",
     "twitter": "",
-    "github": ""
+    "github": "",
+    "slides": "tom-zickel.pdf",
+    "slidesother": "http://tom.zickel.org/pyconil-2016"
   },
   {
     "time": "11:30 – 12:00",
@@ -376,7 +404,8 @@
     "bio": "Benjamin Peterson is a core developer of CPython. He also wrote the six Python 2 & 3 compatibility library.",
     "company": "",
     "twitter": "",
-    "github": "benjaminp"
+    "github": "benjaminp",
+    "slides": "benjamin-peterson.pdf"
   }
   ], [
   {
@@ -389,7 +418,8 @@
     "bio": "Gabor has been programming for more than 30 years and has been teaching programmers for more than 15 years. He loves to automate tasks and he loves writing tests. He likes refactoring code and he likes helping people improve their code. Gabor has been contribution to the open source world for many years. He even received the White Camel Award and the HaMakor Prize for his contribution.",
     "company": "",
     "twitter": "szabgab",
-    "github": "szabgab"
+    "github": "szabgab",
+    "slides": "gabor-szabo.pdf"
   },
   {
     "time": "12:00 – 12:30",
@@ -401,7 +431,8 @@
     "bio": "R&D Director @ Applitools",
     "company": "Applitools",
     "twitter": "",
-    "github": ""
+    "github": "",
+    "slides": "daniel-puterman.pdf"
   }
   ], [
   {
@@ -414,7 +445,8 @@
     "bio": "Nati is a Production Engineer at SimilarWeb, fighting manual labor with code and vengeance. Previous experience includes: operations consulting, software development, *nix administration and security research in the Intelligence corps as well as in multiple startup companies.",
     "company": "",
     "twitter": "nocoot",
-    "github": "natict"
+    "github": "natict",
+    "slides": "nati-cohen.pdf"
   },
   {
     "time": "13:30 – 14:00",
@@ -451,7 +483,8 @@
     "bio": "I studied at University of Technology in Brno. Currently I work as a Software Quality Engineer in Red Hat on system management tool Satellite 5.",
     "company": "Red Hat",
     "twitter": "",
-    "github": "alda519"
+    "github": "alda519",
+    "slides": "ales-dujicek.pdf"
   }
   ], [
   {
@@ -464,7 +497,8 @@
     "bio": "Holding a PhD in BioInformatics from Paris XI University (France), David Melamed is currently working as a Senior Research Engineer at CloudLock, the leader in CyberSecurity in the cloud, where he is responsible for the design, architecture and implementation of the core system and data pipeline. Bringing 15 years of experience in leading research and software development in various languages and high-scale environments, he is working primarily in Python over the last years and has also given several talks at the Pyweb-IL meetups.",
     "company": "CloudLock",
     "twitter": "",
-    "github": ""
+    "github": "",
+    "slides": "david-melamed.pdf"
   },
   {
     "time": "14:30 – 15:00",
@@ -476,7 +510,8 @@
     "bio": "VP R&D @ emedgene, Was the first employee and director of engineering @ Taykey. My mother is a robot and Code is my first language.",
     "company": "emedgene",
     "twitter": "ravinizme",
-    "github": "nivm"
+    "github": "nivm",
+    "slides": "niv-mizrahi.pdf"
   }
   ], [
   {
@@ -489,7 +524,8 @@
     "bio": "CTO @ Invertex LTD",
     "company": "Invertex",
     "twitter": "",
-    "github": "tlousky"
+    "github": "tlousky",
+    "slides": "tamir-lousky.pdf"
   },
   {
     "time": "15:00 – 15:30",
@@ -514,7 +550,8 @@
     "bio": "Today: VP R&D of Cymmetria past: Founder and CTO of Desti (sold to Nokia in 2014). Former Officer of an elite cyber unit within Unit 8200 (Israel Defense Forces). Innovative, hands-on executive with a strong record of leading R&D",
     "company": "Cymmetria",
     "twitter": "lorgandon",
-    "github": ""
+    "github": "",
+    "slides": "imri-goldberg.pdf"
   },
   {
     "time": "15:30 – 16:00",

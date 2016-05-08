@@ -13,6 +13,13 @@ mixin talk(session)
           normal
               = session.name
 
+            if session.slides
+                a.social.pdf(href='/'+year+"/static/sessions/" + session.slides, target="_blank")
+                    .fa.fa-file-pdf-o
+            if session.slidesother
+                a.social.pdf(href=session.slidesother, target="_blank")
+                    .fa.fa-link 
+
       if session.avatar
           img.avatar(src=avatar(session.avatar),alt='')
       if session.avatar2
@@ -44,14 +51,6 @@ mixin talk(session)
                   a.social.twitter(href="https://twitter.com/" + session.twitter2)
                       .fa.fa-twitter
           != md(session.bio2)
-
-      if session.slides
-          h4 Slides 
-            a.social.pdf(href='/'+year+"/static/sessions/" + session.slides, target="_blank")
-                .fa.fa-file-pdf-o
-            if session.slidesother
-                a.social.pdf(href=session.slidesother, target="_blank")
-                    .fa.fa-link 
 
       if session.abstract
           h4 Abstract

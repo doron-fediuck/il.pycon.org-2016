@@ -52,7 +52,8 @@
     "bio2": "Ola Sitarska: Co-founder of Django Girls, part of Django Core Team, board member of Django Software Foundation, Senior Developer at Potato.",
     "company2": "",
     "twitter2": "olasitarska",
-    "github2": "olasitarska"
+    "github2": "olasitarska",
+    "slides": "ola-and-ola.pdf"
   }
 ], [
   {
@@ -509,7 +510,8 @@
     "bio": "VP R&D @ emedgene, Was the first employee and director of engineering @ Taykey. My mother is a robot and Code is my first language.",
     "company": "emedgene",
     "twitter": "ravinizme",
-    "github": "nivm"
+    "github": "nivm",
+    "slides": "niv-mizrahi.pdf"
   }
   ], [
   {
